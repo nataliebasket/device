@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header-logo" src="" alt="Логотип магазина гаджетов" />
+      <img class="page-header-logo" src="" alt="Логотип магазина Device" />
       <nav class="navigation">
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
@@ -24,16 +24,16 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link" href="#">Каталог товаров</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#.html">Доставка</a>
+            <a class="navigation-link" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#.html">Гарантия</a>
+            <a class="navigation-link" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#.html">Контакты</a>
+            <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -75,43 +75,50 @@
             </button>
           </li>
         </ol>
-        <dl class="productcard-features">
-          <dd class="productcard-features-value">800 м</dd>
-          <dt class="productcard-features-name">Дальность полета</dt>
-          <dd class="productcard-features-value">50 м</dd>
-          <dt class="productcard-features-name">Радиус поражения</dt>
-        </dl>
+
+        <ul class="productcard-features">
+          <li class="features-item">
+            <b class="features-value">800 м</b>
+            <span class="features-name">Дальность полета</span>
+          </li>
+          <li class="features-item">
+            <b class="features-value">50 м</b>
+            <span class="features-name">Радиус поражения</span>
+          </li>
+        </ul>
       </section>
 
       <section class="gadgets">
         <h2 class="visually-hidden">Виды гаджетов</h2>
         <ul class="gadgets-list">
           <li class="gadgets-item">
-            <a class="gadgets-link" href="#.html">Виртуальная реальность</a>
+            <a class="gadgets-link" href="#">Виртуальная реальность</a>
           </li>
           <li class="gadgets-item">
-            <a class="gadgets-link" href="#.html">Моноподы для селфи</a>
+            <a class="gadgets-link" href="#">Моноподы для селфи</a>
           </li>
           <li class="gadgets-item">
-            <a class="gadgets-link" href="#.html">Экшн-камеры</a>
+            <a class="gadgets-link" href="#">Экшн-камеры</a>
           </li>
           <li class="gadgets-item">
-            <a class="gadgets-link" href="#.html">Фитнес-браслеты</a>
+            <a class="gadgets-link" href="#">Фитнес-браслеты</a>
           </li>
           <li class="gadgets-item">
-            <a class="gadgets-link" href="#.html">Умные часы</a>
+            <a class="gadgets-link" href="#">Умные часы</a>
           </li>
           <li class="gadgets-item">
-            <a class="gadgets-link" href="#.html">Квадрокоптеры</a>
+            <a class="gadgets-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
 
       <section class="delivery">
         <h2 class="visually-hidden">Доставка Гарантия Кредит</h2>
-        <a class="button" href="#">Доставка</a>
-        <a class="button" href="#">Гарантия</a>
-        <a class="button" href="#">Кредит</a>
+        <ul>
+          <li><a class="delivery-button" href="#">Доставка</a></li>
+          <li><a class="delivery-button" href="#">Гарантия</a></li>
+          <li><a class="delivery-button" href="#">Кредит</a></li>
+        </ul>
         <h3>Доставка</h3>
         <p>
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -165,24 +172,23 @@
         <a class="button" href="#">Напишите нам</a>
       </section>
 
-      <section class="mailing">
-        <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>
           Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
           распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
         <form
-          class="appointment-form"
+          class="subscribe-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <input type="email" name="email" />
-          <button class="button" type="submit">Подписаться</button>
+          <input type="email" name="subscribe-email" />
+          <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
-        <span class="mailing-free">Это бесплатно</span>
+        <span class="subscribe-free">Это бесплатно</span>
       </section>
     </main>
-    -------------------------------------------------------------
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
       <img class="footer-logo" src="" alt="Логотип интернет магазина Device" />
