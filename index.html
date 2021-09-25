@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header-logo" href="https://htmlacademy.ru/">
+      <a class="page-header-logo">
         <img class="header-logo" src="" alt="Логотип магазина Device." />
       </a>
       <nav class="navigation">
@@ -27,6 +27,14 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
+              <ul>
+                <li><a class="navigation-popup" href="#">Виртуальная реальность</a></li>
+                <li><a class="navigation-popup" href="/monopods.html">Моноподы для cелфи</a></li>
+                <li><a class="navigation-popup" href="#">Экшн-камеры</a></li>
+                <li><a class="navigation-popup" href="#">Фитнес-браслеты</a></li>
+                <li><a class="navigation-popup" href="#">Умные часы</a></li>
+                <li><a class="navigation-popup" href="#">Квадрокоптеры</a></li>
+              </ul>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -43,23 +51,79 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
+
       <section class="slider">
         <h2 class="visually-hidden">Гаджеты</h2>
-        <img class="slider-image" src="" alt="Квадрокоптер." />
         <button class="slider-button slider-prev" type="button">
           <span class="visually-hidden">Предыдущая карточка.</span>
         </button>
         <button class="slider-button slider-next" type="button">
           <span class="visually-hidden">Следующая карточка.</span>
         </button>
-        <span class="slider-number">01</span>
-        <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
-        <p class="slider-description">
-          Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-          замаскированным под стандартную камеру.
-        </p>
-        <a class="main-button" href="#">Подробнее</a>
-        <ol class="slider-pagination">
+        <article class="quadrocopter">
+          <h3 class="visually-hidden">Квадрокоптер</h3>
+          <img class="slider-image" src="" alt="Квадрокоптер." />
+          <span class="slider-number">01</span>
+          <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
+          <p class="slider-description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+            замаскированным под стандартную камеру.
+          </p>
+          <a class="main-button" href="#">Подробнее</a>
+          <ul class="slider-features">
+            <li class="features-item">
+              <b class="features-value">800 м</b>
+              <span class="features-name">Дальность полета</span>
+            </li>
+            <li class="features-item">
+              <b class="features-value">50 м</b>
+              <span class="features-name">Радиус поражения</span>
+            </li>
+          </ul>
+        </article>
+        <article class="fitness">
+          <h3 class="visually-hidden">Фитнес-браслет</h3>
+          <img class="slider-image" src="" alt="Фитнес-браслет." />
+          <span class="slider-number">02</span>
+          <p class="slider-slogan">Худеем правильно!</p>
+          <p class="slider-description">
+            Мотивирующие фитнес-браслеты помогут найти в себе
+            силы не пропускать занятия и соблюдать диету.
+          </p>
+          <a class="main-button" href="#">Подробнее</a>
+          <ul class="slider-features">
+            <li class="features-item">
+              <b class="features-value">48 часов</b>
+              <span class="features-name">Без подзарядки</span>
+            </li>
+          </ul>
+        </article>
+        <article class="monopods">
+          <h3 class="visually-hidden">Моноподы для cелфи</h3>
+          <img class="slider-image" src="" alt="Моноподы для cелфи." />
+          <span class="slider-number">03</span>
+          <p class="slider-slogan">Делай селфи, как Бен Стиллер! </p>
+          <p class="slider-description">
+            Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+          </p>
+          <a class="main-button" href="#">Подробнее</a>
+          <ul class="slider-features">
+            <li class="features-item">
+              <b class="features-value">8,5 м</b>
+              <span class="features-name">Длина палки</span>
+            </li>
+            <li class="features-item">
+              <b class="features-value">5 кг</b>
+              <span class="features-name">Вес палки</span>
+            </li>
+            <li class="features-item">
+              <b class="features-value">Карбон</b>
+              <span class="features-name">Материал</span>
+            </li>
+          </ul>
+        </article>
+        <ul class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">1 карточка.</span>
@@ -75,16 +139,6 @@
               <span class="visually-hidden">3 карточка.</span>
             </button>
           </li>
-        </ol>
-        <ul class="slider-features">
-          <li class="features-item">
-            <b class="features-value">800 м</b>
-            <span class="features-name">Дальность полета</span>
-          </li>
-          <li class="features-item">
-            <b class="features-value">50 м</b>
-            <span class="features-name">Радиус поражения</span>
-          </li>
         </ul>
       </section>
 
@@ -95,7 +149,7 @@
             <a class="productline-card" href="#">Виртуальная реальность</a>
           </li>
           <li class="productline-item">
-            <a class="productline-card" href="#">Моноподы для селфи</a>
+            <a class="productline-card" href="/monopods.html">Моноподы для селфи</a>
           </li>
           <li class="productline-item">
             <a class="productline-card" href="#">Экшн-камеры</a>
@@ -119,56 +173,73 @@
           <li><button class="services-button" type="button">Гарантия</button></li>
           <li><button class="services-button" type="button">Кредит</button></li>
         </ul>
-        <h3 class="services-delivery">Доставка</h3>
-        <p class="services-delivery-text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-          этаж.
-        </p>
+        <section class="services-card">
+          <h3 class="services-card-name">Доставка</h3>
+          <p class="services-card-text">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
+            этаж.
+          </p>
+        </section>
+        <section class="services-card">
+          <h3 class="services-card-name">Гарантия</h3>
+          <p class="services-card-text">
+            Если из-за возгорания купленного у нас товара у вас
+            сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.
+          </p>
+        </section>
+        <section class="services-card">
+          <h3 class="services-card-name">Кредит</h3>
+          <p class="services-card-text">
+            Залезть в долговую яму стало проще!
+            Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+            Выгодные для банка, разумеется.
+          </p>
+        </section>
       </section>
 
       <section class="information">
         <h2 class="visually-hidden">Информация о магазине</h2>
-        <p class="information-advantages">
+        <a class="delivery-order" href="#">
           Доставим редкий товар под заказ
-          <button class="information-advantages-info" type="button">
-            <span class="visually-hidden"
-              >Посмотреть дополнительную информацию.</span
-            >
-          </button>
-        </p>
-        <h3 class="information-title">О нас</h3>
-        <p class="information-text">
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас.
-        </p>
-        <p class="information-text">
-          Мы можем доставить ваш товар в самые отдалённые уголки России
-          транспортными компаниями:
-        </p>
-        <ul class="information-list">
-          <li class="information-list-item">Меловые линии</li>
-          <li class="information-list-item">СДИК</li>
-          <li class="information-list-item">ТоксБерри</li>
-        </ul>
-        <a class="main-button" href="#">Подробнее о нас</a>
-        <h3 class="information-title">Контакты</h3>
-        <p class="information-text">
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете
-          проверить работоспособность покупки.
-        </p>
-        <p class="information-text-bold">Интернет-магазин «Девайс»</p>
-        <p class="information-text">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
-          <br>
-          <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-        </p>
-        <p class="information-text-bold">Время работы</p>
-        <ul class="information-schedule">
-          <li class="information-schedule-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="information-schedule-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
-        <a class="main-button" href="#">Напишите нам</a>
+        </a>
+        <section class="information-about">
+          <h3 class="information-title">О нас</h3>
+          <p class="information-text">
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            каждом из нас.
+          </p>
+          <p class="information-text">
+            Мы можем доставить ваш товар в самые отдалённые уголки России
+            транспортными компаниями:
+          </p>
+          <ul class="information-list">
+            <li class="information-list-item">Меловые линии</li>
+            <li class="information-list-item">СДИК</li>
+            <li class="information-list-item">ТоксБерри</li>
+          </ul>
+          <a class="main-button" href="#">Подробнее о нас</a>
+        </section>
+        <section class="information-contacts">
+          <h3 class="information-title">Контакты</h3>
+          <p class="information-text">
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете
+            проверить работоспособность покупки.
+          </p>
+          <p class="information-text-bold">Интернет-магазин «Девайс»</p>
+          <p class="information-text">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+            <br>
+            <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+          </p>
+          <p class="information-text-bold">Время работы</p>
+          <ul class="information-schedule">
+            <li class="information-schedule-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="information-schedule-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
+          <a class="main-button" href="#">Напишите нам</a>
+      </section>
       </section>
 
       <section class="subscribe">
@@ -191,7 +262,7 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <a class="page-footer-logo" href="https://htmlacademy.ru/">
+      <a class="page-footer-logo">
         <img class="footer-logo" src="" alt="Логотип интернет магазина Device." />
       </a>
       <address class="footer-address">
