@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header-logo" href="https://htmlacademy.ru/">
+      <a class="page-header-logo" href="/index.html">
         <img class="header-logo" src="" alt="Логотип магазина Device." />
       </a>
       <nav class="navigation">
@@ -15,7 +15,10 @@
             <a class="navigation-link" href="#">Поиск по сайту</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
+            <a class="navigation-link" href="#">Коля Петухов</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Выйти</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Сравнить</a>
@@ -27,6 +30,14 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
+              <ul>
+                <li><a class="navigation-popup" href="#">Виртуальная реальность</a></li>
+                <li><a class="navigation-popup" >Моноподы для cелфи</a></li>
+                <li><a class="navigation-popup" href="#">Экшн-камеры</a></li>
+                <li><a class="navigation-popup" href="#">Фитнес-браслеты</a></li>
+                <li><a class="navigation-popup" href="#">Умные часы</a></li>
+                <li><a class="navigation-popup" href="#">Квадрокоптеры</a></li>
+              </ul>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -81,39 +92,24 @@
             <legend class="catalog-filter-title">Цвет</legend>
             <ul>
               <li>
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color-black" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Черный</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="color-black" id="color-black" checked>
+                <label class="control-label" for="color-black">Черный</label>
               </li>
               <li>
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color-white" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Белый</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="color-white" id="color-white" checked>
+                <label class="control-label" for="color-white">Белый</label>
               </li>
               <li>
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color-blue">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Синий</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="color-blue" id="color-blue">
+                <label class="control-label" for="color-blue">Синий</label>
               </li>
               <li>
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color-red">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красный</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="color-red" id="color-red">
+                <label class="control-label" for="color-red">Красный</label>
               </li>
               <li>
-                <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="color-pink">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Розовый</span>
-                </label>
+                <input class="visually-hidden control-input" type="checkbox" name="color-pink" id="color-pink">
+                <label class="control-label" for="color-pink">Розовый</label>
               </li>
             </ul>
           </fieldset>
@@ -122,18 +118,12 @@
             <legend class="catalog-filter-title">Bluetooth</legend>
             <ul>
               <li>
-                <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Есть</span>
-                </label>
+                <input class="visually-hidden control-input" type="radio" name="bluetooth" id="bluetooth-yes" value="yes" checked>
+                <label class="control-label" for="bluetooth-yes">Есть</label>
               </li>
               <li>
-                <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Нет</span>
-                </label>
+                <input class="visually-hidden control-input" type="radio" name="bluetooth" id="bluetooth-no" value="no">
+                <label class="control-label" for="bluetooth-no" >Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -157,47 +147,43 @@
           <span class="visually-hidden">Вниз.</span>
         </a>
 
-        <ul class="product-list">
-          <li class="droduct-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="Любительская селфи-палка.">
-            </a>
-            <a class="product-card-link" href="#">
-              <h3 class="product-card-title">Любительская селфи-палка</h3>
-            </a>
-            <b class="product-card-price">500 ₽</b>
-          </li>
-          <li class="droduct-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="Профессиональная селфи-палка.">
-            </a>
-            <a class="product-card-link" href="#">
-              <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-            </a>
-            <b class="product-card-price">1500 ₽</b>
-          </li>
-          <li class="droduct-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="Непотопляемая
-              селфи-палка.">
-            </a>
-            <a class="product-card-link" href="#">
-              <h3 class="product-card-title">Непотопляемая
-                селфи-палка</h3>
-            </a>
-            <b class="product-card-price">2500 ₽</b>
-          </li>
-          <li class="droduct-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="" alt="Селфи-палка «Следуй за мной».">
-            </a>
-            <a class="product-card-link" href="#">
-              <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-            </a>
-            <b class="product-card-price">4900 ₽</b>
-          </li>
-        </ul>
-        <button class="button-loadmore pagination-show-more" type="button">Загрузить ещё</button>
+        <article class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="Любительская селфи-палка.">
+          </a>
+          <h3 class="product-card-link">
+            <a class="product-card-title" href="#">Любительская селфи-палка</a>
+          </h3>
+          <b class="product-card-price">500 ₽</b>
+        </article>
+        <article class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="Профессиональная селфи-палка.">
+          </a>
+          <h3 class="product-card-link">
+            <a class="product-card-title" href="#">Профессиональная селфи-палка</a>
+          </h3>
+          <b class="product-card-price">1500 ₽</b>
+        </article>
+        <article class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="Непотопляемая селфи-палка.">
+          </a>
+          <h3 class="product-card-link">
+            <a class="product-card-title" href="#">Непотопляемая селфи-палка</a>
+          </h3>
+          <b class="product-card-price">2500 ₽</b>
+        </article>
+        <article class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="" alt="Селфи-палка «Следуй за мной».">
+          </a>
+          <h3 class="product-card-link">
+            <a class="product-card-title" href="#">Селфи-палка «Следуй за мной»</a>
+          </h3>
+          <b class="product-card-price">4900 ₽</b>
+        </article>
+        <a class="button-loadmore" href="#">Загрузить ещё</a>
         <a class="pagination-link pagination-prev" href="#">Назад</a>
         <ul class="pagination">
           <li class="pagination-item">
@@ -222,7 +208,7 @@
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <a class="page-footer-logo" href="https://htmlacademy.ru/">
+      <a class="page-footer-logo" href="/index.html">
         <img class="footer-logo" src="" alt="Логотип интернет магазина Device." />
       </a>
       <address class="footer-address">
@@ -239,9 +225,7 @@
           <a class="footer-links" href="#">Контакты</a>
         </li>
       </ul>
-      <a class="contacts-phone" href="tel:88128121212"
-        >Тел.: +7 (812) 812-12-12</a
-      >
+      <a class="contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-button" href="#">
@@ -259,8 +243,8 @@
           </a>
         </li>
       </ul>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/"
-        ><img src="" alt="Логотип HTML Academy."/>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img src="" alt="Логотип HTML Academy."/>
       </a>
     </footer>
   </body>
