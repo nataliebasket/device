@@ -27,13 +27,24 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: white;
   color:  #444444;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -56,6 +67,28 @@ body {
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-right: 36px;
+  padding-left: 36px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  top: 20px;
+  left: 0px;
+  background: #FFE17F;;
+  z-index: -1;
+  transition: transform 0.2s;
+}
+
+.main-button:hover::before {
+  transform: scaleY(6.3);
 }
 
 .button-select {
@@ -65,7 +98,38 @@ body {
 
 .page-header {
   color:black;
+
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
   background-color: #FFE17F;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1160px;
+}
+
+.navigation-submenu-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1160px;
+}
+
+.submenu-item {
+  width: 210px;
+}
+
+.submenu-list {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -76,7 +140,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.navigation-popup {
+.submenu-link {
   color: black;
   font-size: 16px;
   line-height: 18px;
@@ -97,6 +161,11 @@ body {
 .main-index {
   color:black;
   background-color: #ffffff;
+}
+
+.page-container {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .slider-slogan {
