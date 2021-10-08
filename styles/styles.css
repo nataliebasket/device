@@ -164,8 +164,17 @@ body {
 }
 
 .page-container {
-  width: 940px;
+  width: 1160px;
   margin: 0 auto;
+}
+
+.slider-card {
+  display:flex;
+  justify-content: space-between;
+}
+
+.slider-info {
+  width: 560px;
 }
 
 .slider-slogan {
@@ -173,6 +182,7 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
+
 
 .slider-description {
   font-size: 18px;
@@ -196,6 +206,16 @@ line-height: 30px;
 background-color: #FFE17F;
 color: white;
 }
+
+.productline-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+
+
 
 .productline-card {
   font-family: "Raleway", sans-serif;
