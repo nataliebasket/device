@@ -98,7 +98,12 @@ body {
 
 .page-header {
   color:black;
+}
 
+.page-header-logo {
+  margin-top: 17px;
+  margin-left: 60px;
+  width: 150px;
 }
 
 .navigation {
@@ -106,7 +111,7 @@ body {
   flex-direction: column;
   width: 1160px;
   margin: 0 auto;
-  background-color: #FFE17F;
+  background-image: linear-gradient(transparent 40px, #FFE17F 40px);
 }
 
 .navigation-list {
@@ -115,14 +120,17 @@ body {
   list-style: none;
   display: flex;
   width: 1160px;
+  margin-left: 60px;
 }
 
 .navigation-submenu-list {
   margin: 0;
+  margin-left: 60px;
   padding: 0;
   list-style: none;
   display: flex;
   width: 1160px;
+
 }
 
 .submenu-list {
@@ -170,6 +178,7 @@ body {
 .slider-card {
   display:flex;
   justify-content: space-between;
+  background-image: linear-gradient(#FFE17F 15%, transparent 15%);
 }
 
 .slider-info {
@@ -192,7 +201,6 @@ body {
 .slider-features {
   margin: 0;
   padding: 0;
-
   list-style: none;
   display:flex;
 
@@ -218,8 +226,8 @@ body {
   font-weight: 800;
   font-size: 180px;
   line-height: 30px;
-  background-color: #FFE17F;
   color: white;
+  display: block;
 }
 
 .productline-list {
@@ -435,6 +443,10 @@ line-height: 30px;
   text-decoration: none;
 }
 
+.inner-header {
+  margin-left: 60px;
+}
+
 .inner-header-title {
   font-family: "Raleway", sans-serif;
   color: #000000;
@@ -450,6 +462,39 @@ line-height: 30px;
   text-decoration: none;
 }
 
+.catalog-background-top {
+  height: 70px;
+  background-image: linear-gradient( to right, #DCDCDC 30%, #EBEBEB 30%);
+}
+
+.catalog-background {
+  background-image: linear-gradient( to right, #EBEBEB 30%, transparent 30%);
+}
+
+.catalog-top {
+  display: flex;
+  background-image: linear-gradient( to right, #DCDCDC 328px, #EBEBEB 328px);
+  width: 1160px;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-left-column {
+  width: 328px;
+  background-color: #EBEBEB;
+}
+
+.catalog-right-column {
+  width: 700px;
+  padding-top: 69px;
+  padding-left: 72px;
+}
+
 .catalog-products-title {
   font-family: "Raleway", sans-serif;
   color: #000000;
@@ -457,11 +502,6 @@ line-height: 30px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-color: #DCDCDC;
-}
-
-.catalog-filter {
-  background-color:  #EBEBEB;
 }
 
 .product-card-title {
@@ -514,3 +554,5 @@ line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
 }
+
+
