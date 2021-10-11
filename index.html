@@ -133,7 +133,7 @@
             <img class="slider-image" src="img/content/slider-3.png" width="560" height="560" alt="Моноподы для cелфи." />
             <div class="slider-info">
               <span class="slider-number">03</span>
-              <p class="slider-slogan">Делай селфи, как Бен Стиллер! </p>
+              <p class="slider-slogan">Делай селфи,<br>как Бен Стиллер! </p>
               <p class="slider-description">
                 Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
@@ -182,7 +182,7 @@
               <a class="productline-card" href="#">Виртуальная реальность</a>
             </li>
             <li class="productline-item">
-              <a class="productline-card" href="./monopods.html">Моноподы для селфи</a>
+              <a class="productline-card" href="./monopods.html">Моноподы<br>для селфи</a>
             </li>
             <li class="productline-item">
               <a class="productline-card" href="#">Экшн-камеры</a>
@@ -199,14 +199,15 @@
           </ul>
         </section>
       </div>
-        <section class="services">
-          <div class="page-container">
-            <h2 class="visually-hidden">Сервисы</h2>
-            <ul>
-              <li><button class="main-button services-button button-select" type="button">Доставка</button></li>
-              <li><button class="main-button services-button" type="button">Гарантия</button></li>
-              <li><button class="main-button services-button" type="button">Кредит</button></li>
-            </ul>
+      <section class="services">
+        <div class="page-container services-blocks">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <ul>
+            <li><button  type="button">Доставка</button></li>
+            <li><button  type="button">Гарантия</button></li>
+            <li><button  type="button">Кредит</button></li>
+          </ul>
+          <div>
             <section class="services-card">
               <h3 class="services-card-name">Доставка</h3>
               <p class="services-card-text">
@@ -232,17 +233,20 @@
               </p>
             </section>
           </div>
-        </section>
+        </div>
+      </section>
+
+      <section class="page-container">
+        <a class="delivery-order" href="#">Доставим редкий товар под заказ</a>
+      </section>
+
       <div class="page-container">
         <section class="information">
           <h2 class="visually-hidden">Информация о магазине</h2>
-          <a class="delivery-order" href="#">
-            Доставим редкий товар под заказ
-          </a>
           <section class="information-about">
             <h3 class="information-title">О нас</h3>
             <p class="information-text">
-              Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+              Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в
               каждом из нас.
             </p>
             <p class="information-text">
@@ -279,16 +283,20 @@
       </div>
         <section class="subscribe">
           <div class="page-container">
-            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-text">
-              Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-              распаковками, а также акции, спецпредложения и вот это вот всё.
-            </p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" name="subscribe-email" placeholder="Ваш e-mail"/>
-              <button class="subscribe-button" type="submit">Подписаться</button>
-            </form>
-            <span class="subscribe-free">Это бесплатно</span>
+            <div class="subscribe-top">
+              <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+              <p class="subscribe-text">
+                Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
+                распаковками, а также акции, спецпредложения и вот это вот всё.
+              </p>
+            </div>
+            <div class="subscribe-top">
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <input type="email" name="subscribe-email" placeholder="Ваш e-mail"/>
+                <button class="subscribe-button" type="submit">Подписаться</button>
+              </form>
+              <span class="subscribe-free">Это бесплатно</span>
+            </div>
           </div>
         </section>
     </main>
@@ -299,41 +307,46 @@
         <a class="page-footer-logo">
           <img class="footer-logo" src="img/footer-logo.svg" width="145" height="36" alt="Логотип интернет магазина Device." />
         </a>
-        <address class="footer-address">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </address>
-        <ul class="footer-links-list">
-          <li class="footer-links-list-item">
-            <a class="footer-links" href="#">Доставка</a>
-          </li>
-          <li class="footer-links-list-item">
-            <a class="footer-links" href="#">Гарантия</a>
-          </li>
-          <li class="footer-links-list-item">
-            <a class="footer-links" href="#">Контакты</a>
-          </li>
-        </ul>
-        <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="#">
-              <span class="visually-hidden">Facebook.</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="#">
-              <span class="visually-hidden">Instagram.</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="footer-social-button" href="#">
-              <span class="visually-hidden">Twitter.</span>
-            </a>
-          </li>
-        </ul>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img src="img/htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy."/>
-        </a>
+        <div class="footer-center">
+          <address class="footer-address">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </address>
+          <ul class="footer-links-list">
+            <li class="footer-links-list-item">
+              <a class="footer-links" href="#">Доставка</a>
+            </li>
+            <li class="footer-links-list-item">
+              <a class="footer-links" href="#">Гарантия</a>
+            </li>
+            <li class="footer-links-list-item">
+              <a class="footer-links" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="footer-contacts-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
+        </div>
+        <div class="footer-bottom">
+          <span class="yellow-line"></span>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">Facebook.</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">Instagram.</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-button" href="#">
+                <span class="visually-hidden">Twitter.</span>
+              </a>
+            </li>
+          </ul>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img src="img/htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy."/>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
