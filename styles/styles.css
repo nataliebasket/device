@@ -103,7 +103,7 @@ body {
 .page-header-logo {
   margin-top: 17px;
   margin-left: 60px;
-  width: 150px;
+  width: 145px;
 }
 
 .navigation {
@@ -111,26 +111,35 @@ body {
   flex-direction: column;
   width: 1160px;
   margin: 0 auto;
+
   background-image: linear-gradient(transparent 40px, #FFE17F 40px);
+
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
+  /* justify-content: space-between; */
   width: 1160px;
-  margin-left: 60px;
+  box-sizing: border-box;
+  /* padding-left: 60px;
+  padding-right: 60px; */
+  margin-top: 18px;
+  list-style-type: none;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
 }
 
 .navigation-submenu-list {
   margin: 0;
-  margin-left: 60px;
+  margin-top: 33px;
   padding: 0;
+  /* padding-left: 60px; */
   list-style: none;
   display: flex;
   width: 1160px;
-
+  box-sizing: border-box;
 }
 
 .submenu-list {
@@ -140,27 +149,48 @@ body {
 }
 
 .navigation-link {
+  display:block;
+  padding: 15px 20px;
   font-family: "Raleway", sans-serif;
   color: black;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  outline: 2px solid green;
+  outline-offset: -2px;
 }
+
 .submenu-link {
+  display:block;
+  padding: 3px 15px 5px 15px;
   color: black;
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
 }
 
+.submenu-link:hover {
+  opacity: 0.6;
+}
+.submenu-link:focus {
+  opacity: 0.6;
+}
+
 .navigation-user-link {
+  display:block;
+  padding: 10px 21px;
   color: black;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
 }
+
+.navigation-user-link:hover {
+  opacity: 0.6;
+}
+
 .navigation-user-link-gray {
   opacity: 0.3;
 }
@@ -179,6 +209,11 @@ body {
   display:flex;
   justify-content: space-between;
   background-image: linear-gradient(#FFE17F 15%, transparent 15%);
+
+}
+
+.slider-image {
+  position: relative;
 }
 
 .slider-info {
@@ -191,7 +226,6 @@ body {
   line-height: 50px;
 }
 
-
 .slider-description {
   font-size: 18px;
   line-height: 30px;
@@ -203,7 +237,28 @@ body {
   padding: 0;
   list-style: none;
   display:flex;
+}
 
+.slider-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 50%;
+  height: 60px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.button-left {
+  left: 0px;
+  background-image: url(/img/other/slider-arrow-left.svg);
+  transform: translate(0, -50%);
+}
+
+.button-right {
+  right: 0px;
+  background-image: url(/img/other/slider-arrow-right.svg);
+  transform: translate(0, -50%);
 }
 
 .features-item {
@@ -490,7 +545,7 @@ line-height: 30px;
 }
 
 .catalog-right-column {
-  width: 700px;
+  width: 760px;
   padding-top: 69px;
   padding-left: 72px;
 }
@@ -554,5 +609,77 @@ line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.search {
+  position: relative;
+  box-sizing: border-box;
+  width: 516px;
+  height: 40px;
+  /* left: -16px; */
+}
+
+.search-input {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
+.search input::placeholder {
+  color: black;
+  opacity: 0.3;
+}
+.search input:hover::placeholder {
+  color: black;
+  opacity: 0.6;
+}
+
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
+.search input {
+  width: 516px;
+  height: 40px;
+  padding-left: 52px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: #FFE17F;
+  color: black;
+  display:block;
+  position: relative;
+}
+
+.search::before {
+  position: absolute;
+  content: "";
+  background-image: url("/img/other/search.svg");
+  width: 16px;
+  height: 16px;
+  z-index: 100;
+  top: 12px;
+  left: 16px;
+}
+
+.search button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 160px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 0 20px 20px 0;
+  background: #FFE17F;
+  cursor: pointer;
+}
+
 
 

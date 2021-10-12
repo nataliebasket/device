@@ -11,60 +11,63 @@
         <a class="page-header-logo">
           <img class="header-logo" src="img/header-logo.svg" width="145" height="36" alt="Логотип магазина Device." />
         </a>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link navigation-user-link-gray" href="#">Поиск по сайту</a>
+        <ul class="navigation-list">
+          <li>
+            <form class="search">
+              <input type="text" class="search-input" placeholder="Поиск по сайту">
+              <button type="submit" class="search-button">Найти</button>
+            </form>
           </li>
-          <li class="navigation-user-item">
+          <li>
             <a class="navigation-user-link" href="#">Войти</a>
           </li>
-          <li class="navigation-user-item">
+          <li>
             <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation-user-item">
+          <li>
             <a class="navigation-user-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li>
             <a class="navigation-link" href="#">Каталог товаров</a>
           </li>
-          <li class="navigation-item">
+          <li>
             <a class="navigation-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-item">
+          <li>
             <a class="navigation-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-item">
+          <li>
             <a class="navigation-link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="navigation-submenu-list">
           <li>
             <ul class="submenu-list">
-              <li class="submenu-item">
+              <li>
                 <a class="submenu-link" href="#">Виртуальная реальность</a>
               </li>
-              <li class="submenu-item">
+              <li>
                 <a class="submenu-link" href="monopods.html">Моноподы для cелфи</a></li>
-              <li class="submenu-item">
+              <li>
                 <a class="submenu-link" href="#">Экшн-камеры</a>
               </li>
             </ul>
           </li>
           <li>
             <ul class="submenu-list">
-              <li class="submenu-item">
+              <li>
                 <a class="submenu-link" href="#">Фитнес-браслеты</a>
               </li>
-              <li class="submenu-item">
+              <li>
                 <a class="submenu-link" href="#">Умные часы</a>
               </li>
             </ul>
           </li>
           <li>
             <ul class="submenu-list">
-              <li class="submenu-item">
+              <li>
                 <a class="submenu-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
@@ -79,16 +82,19 @@
         <section class="slider">
 
           <h2 class="visually-hidden">Гаджеты</h2>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущая карточка.</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующая карточка.</span>
-          </button>
+
 
           <article class="slider-card">
             <h3 class="visually-hidden">Квадрокоптер</h3>
-            <img class="slider-image" src="img/content/slider-1.png" width="560" height="560" alt="Квадрокоптер." />
+            <div class="slider-image" >
+              <img src="img/content/slider-1.png" width="560" height="560" alt="Квадрокоптер." />
+              <button class="slider-button button-left" type="button">
+                <span class="visually-hidden">Предыдущая карточка.</span>
+              </button>
+              <button class="slider-button button-right" type="button">
+                <span class="visually-hidden">Следующая карточка.</span>
+              </button>
+            </div>
             <div class="slider-info">
               <span class="slider-number">01</span>
               <p class="slider-slogan">Порхает как бабочка, жалит как пчела!</p>
@@ -108,6 +114,7 @@
                 </li>
               </ul>
             </div>
+
           </article>
           <article class="slider-card">
             <h3 class="visually-hidden">Фитнес-браслет</h3>
