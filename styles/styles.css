@@ -301,13 +301,13 @@ body {
 
 .button-left {
   left: 0px;
-  background-image: url(/img/other/slider-arrow-left.svg);
+  background-image: url(../img/other/slider-arrow-left.svg);
   transform: translate(0, -50%);
 }
 
 .button-right {
   right: 0px;
-  background-image: url(/img/other/slider-arrow-right.svg);
+  background-image: url(../img/other/slider-arrow-right.svg);
   transform: translate(0, -50%);
 }
 
@@ -708,7 +708,7 @@ line-height: 30px;
 .search::before {
   position: absolute;
   content: "";
-  background-image: url("/img/other/search.svg");
+  background-image: url("../img/other/search.svg");
   width: 16px;
   height: 16px;
   z-index: 100;
