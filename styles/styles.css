@@ -75,6 +75,8 @@ body {
   z-index: 1;
 }
 
+
+
 .main-button::before {
   content: "";
   position: absolute;
@@ -103,6 +105,7 @@ body {
 .page-header-logo {
   margin-top: 17px;
   margin-left: 60px;
+  margin-bottom: 16px;
   width: 145px;
 }
 
@@ -116,35 +119,54 @@ body {
 
 }
 
+.navigation-user-list {
+  width: 1160px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-left: 44px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
 .navigation-list {
+  width: 1160px;
   margin: 0;
   padding: 0;
+  padding-left: 40px;
+  padding-right: 36px;
   display: flex;
-  /* justify-content: space-between; */
-  width: 1160px;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: space-between;
   box-sizing: border-box;
-  /* padding-left: 60px;
-  padding-right: 60px; */
-  margin-top: 18px;
   list-style-type: none;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 
 .navigation-submenu-list {
   margin: 0;
-  margin-top: 33px;
   padding: 0;
-  /* padding-left: 60px; */
+  margin-top: 31px;
+  padding-left: 44px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   box-sizing: border-box;
+
 }
 
 .submenu-list {
+  box-sizing: border-box;
   margin: 0;
+  margin-right: 20px;
   padding: 0;
+  width: 225px;
   list-style: none;
 }
 
@@ -157,13 +179,12 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
-  outline: 2px solid green;
-  outline-offset: -2px;
 }
 
 .submenu-link {
   display:block;
   padding: 3px 15px 5px 15px;
+  margin-bottom: 10px;
   color: black;
   font-size: 16px;
   line-height: 18px;
@@ -208,28 +229,57 @@ body {
 .slider-card {
   display:flex;
   justify-content: space-between;
-  background-image: linear-gradient(#FFE17F 15%, transparent 15%);
+  background-image: linear-gradient(#FFE17F 150px, transparent 150px);
+  margin-bottom: 70px;
 
 }
 
 .slider-image {
   position: relative;
+  align-self: center;
 }
 
 .slider-info {
   width: 560px;
+  position: relative;
+  padding-top: 121px;
+  padding-bottom: 39px;
+}
+
+.slider-number {
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 30px;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: 49px;
 }
 
 .slider-slogan {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin: 0px;
+  margin-bottom: 29px;
+  /* margin-top: 121px; */
+  position: relative;
 }
 
 .slider-description {
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  margin: 0px;
+  margin-bottom: 37px;
+}
+
+.button-more {
+  display:block;
+  width: 150px;
+  margin: 0px;
+  margin-bottom: 51px;
 }
 
 .slider-features {
@@ -270,6 +320,7 @@ body {
   font-weight: 400;
   font-size: 36px;
   width: 160px;
+  margin-bottom: 11px;
 }
 
 .features-name {
@@ -277,13 +328,6 @@ body {
   color:  #444444;
 }
 
-.slider-number {
-  font-weight: 800;
-  font-size: 180px;
-  line-height: 30px;
-  color: white;
-  display: block;
-}
 
 .productline-list {
   margin: 0;
@@ -612,10 +656,8 @@ line-height: 30px;
 
 .search {
   position: relative;
-  box-sizing: border-box;
   width: 516px;
   height: 40px;
-  /* left: -16px; */
 }
 
 .search-input {
@@ -625,6 +667,15 @@ line-height: 30px;
   font-size: 16px;
   line-height: 19px;
   color: black;
+  box-sizing: border-box;
+  width: 516px;
+  height: 40px;
+  padding-left: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: #FFE17F;
+  color: black;
+  display:block;
 }
 
 .search input::placeholder {
@@ -643,33 +694,6 @@ line-height: 30px;
   font-size: 16px;
   line-height: 19px;
   color: black;
-}
-
-.search input {
-  width: 516px;
-  height: 40px;
-  padding-left: 52px;
-  box-sizing: border-box;
-  border: 2px solid black;
-  border-radius: 20px;
-  background: #FFE17F;
-  color: black;
-  display:block;
-  position: relative;
-}
-
-.search::before {
-  position: absolute;
-  content: "";
-  background-image: url("/img/other/search.svg");
-  width: 16px;
-  height: 16px;
-  z-index: 100;
-  top: 12px;
-  left: 16px;
-}
-
-.search button {
   position: absolute;
   top: 0;
   right: 0px;
@@ -681,5 +705,30 @@ line-height: 30px;
   cursor: pointer;
 }
 
+.search::before {
+  position: absolute;
+  content: "";
+  background-image: url("/img/other/search.svg");
+  width: 16px;
+  height: 16px;
+  z-index: 100;
+  top: 13px;
+  left: 16px;
+}
 
-
+.slider-pagination {
+  width: 80px;
+  list-style-type: none;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.slider-pagination-button {
+  box-sizing: border-box;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
