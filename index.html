@@ -80,9 +80,7 @@
       <div class="page-container">
         <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
         <section class="slider">
-
           <h2 class="visually-hidden">Гаджеты</h2>
-
           <article class="slider-card">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <div class="slider-image" >
@@ -113,24 +111,25 @@
                 </li>
               </ul>
             </div>
+            <ul class="slider-pagination">
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button">
+                  <span class="visually-hidden">1 карточка.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button">
+                  <span class="visually-hidden">2 карточка.</span>
+                </button>
+              </li>
+              <li class="slider-pagination-item">
+                <button class="slider-pagination-button" type="button">
+                  <span class="visually-hidden">3 карточка.</span>
+                </button>
+              </li>
+            </ul>
           </article>
-          <ul class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="submit">
-                <!-- <span class="visually-hidden">1 карточка.</span> -->
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 карточка.</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 карточка.</span>
-              </button>
-            </li>
-          </ul>
+
           <article class="slider-card">
             <h3 class="visually-hidden">Фитнес-браслет</h3>
             <div class="slider-image" >
@@ -162,7 +161,7 @@
             <h3 class="visually-hidden">Моноподы для cелфи</h3>
             <div class="slider-image" >
               <img class="slider-image" src="img/content/slider-3.png" width="560" height="560" alt="Моноподы для cелфи." />
-              <button class="slider-button button-left" type="button"></button>
+              <button class="slider-button button-left" type="button">
               <span class="visually-hidden">Предыдущая карточка.</span>
               </button>
               <button class="slider-button button-right" type="button">
@@ -198,61 +197,80 @@
         <section class="productline">
           <h2 class="visually-hidden">Ассортимент</h2>
           <ul class="productline-list">
-            <li class="productline-item">
+            <li class="productline-item productline-virt">
               <a class="productline-card" href="#">Виртуальная реальность</a>
             </li>
-            <li class="productline-item">
+            <li class="productline-item productline-virt">
               <a class="productline-card" href="./monopods.html">Моноподы<br>для селфи</a>
             </li>
-            <li class="productline-item">
+            <li class="productline-item productline-virt">
               <a class="productline-card" href="#">Экшн-камеры</a>
             </li>
-            <li class="productline-item">
+            <li class="productline-item productline-virt">
               <a class="productline-card" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="productline-item">
+            <li class="productline-item productline-virt">
               <a class="productline-card" href="#">Умные часы</a>
             </li>
-            <li class="productline-item">
+            <li class="productline-item productline-virt">
               <a class="productline-card" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </section>
       </div>
+
       <section class="services">
         <div class="page-container services-blocks">
           <h2 class="visually-hidden">Сервисы</h2>
-          <ul>
-            <li><button  type="button">Доставка</button></li>
-            <li><button  type="button">Гарантия</button></li>
-            <li><button  type="button">Кредит</button></li>
+          <ul class="services-button-list">
+            <li><button type="button" class="services-button-active">Доставка</button></li>
+            <li><button type="button" class="services-button">Гарантия</button></li>
+            <li><button type="button" class="services-button">Кредит</button></li>
           </ul>
-          <div>
-            <section class="services-card">
-              <h3 class="services-card-name">Доставка</h3>
-              <p class="services-card-text">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-                этаж.
-              </p>
-            </section>
-            <section class="services-card">
-              <h3 class="services-card-name">Гарантия</h3>
+          <section class="services-card">
+            <h3 class="services-card-name">Доставка</h3>
+            <p class="services-card-text">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
+              этаж.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="services">
+        <div class="page-container services-blocks">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <ul class="services-button-list">
+            <li><button type="button" class="services-button">Доставка</button></li>
+            <li><button type="button" class="services-button-active">Гарантия</button></li>
+            <li><button type="button" class="services-button">Кредит</button></li>
+          </ul>
+          <section class="services-card">
+            <h3 class="services-card-name">Гарантия</h3>
               <p class="services-card-text">
                 Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.
               </p>
-            </section>
-            <section class="services-card">
-              <h3 class="services-card-name">Кредит</h3>
+          </section>
+        </div>
+      </section>
+      <section class="services">
+        <div class="page-container services-blocks">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <ul class="services-button-list">
+            <li><button type="button" class="services-button">Доставка</button></li>
+            <li><button type="button" class="services-button">Гарантия</button></li>
+            <li><button type="button" class="services-button-active">Кредит</button></li>
+          </ul>
+          <section class="services-card">
+            <h3 class="services-card-name">Кредит</h3>
               <p class="services-card-text">
                 Залезть в долговую яму стало проще!
                 Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
                 Выгодные для банка, разумеется.
               </p>
-            </section>
-          </div>
+          </section>
         </div>
       </section>
 
