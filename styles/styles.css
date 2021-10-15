@@ -801,6 +801,13 @@ background-color: transparent;
 .page-footer {
   background-color: #444444;
   color: #ffffff;
+  padding-top: 62px;
+  padding-bottom: 61px;
+}
+
+.page-footer-logo {
+  margin-bottom: 27px;
+  display: block;
 }
 
 .footer-address {
@@ -816,6 +823,8 @@ background-color: transparent;
 .footer-center {
   display:flex;
   justify-content:space-between;
+  align-items: baseline;
+  margin-bottom: 63px;
 }
 
 .footer-bottom {
@@ -844,14 +853,43 @@ background-color: transparent;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  padding-top: 14;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
 }
 
+.footer-links:hover {
+  color: #FFC700;
+}
+
+
 .footer-links-list {
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
-  width: 440px;
+  width: 550px;
+}
+
+.footer-social-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.footer-social-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
 }
 
 
