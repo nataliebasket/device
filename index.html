@@ -274,9 +274,11 @@
         </div>
       </section>
 
-      <section class="page-container">
-        <a class="delivery-order" href="#">Доставим редкий товар под заказ</a>
-      </section>
+      <div class="page-container">
+        <section class="delivery">
+          <a class="delivery-order" href="#">Доставим редкий товар под заказ</a>
+        </section>
+      </div>
 
       <div class="page-container">
         <section class="information">
@@ -285,9 +287,7 @@
             <h3 class="information-title">О нас</h3>
             <p class="information-text">
               Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в
-              каждом из нас.
-            </p>
-            <p class="information-text">
+              каждом из нас.<br><br>
               Мы можем доставить ваш товар в самые отдалённые уголки России
               транспортными компаниями:
             </p>
@@ -296,7 +296,7 @@
               <li class="information-list-item">СДИК</li>
               <li class="information-list-item">ТоксБерри</li>
             </ul>
-            <a class="main-button" href="#">Подробнее о нас</a>
+            <a class="information-button" href="#">Подробнее о нас</a>
           </section>
           <section class="information-contacts">
             <h3 class="information-title">Контакты</h3>
@@ -315,28 +315,28 @@
               <li class="information-schedule-item">пн—пт: с 10:00 до 22:00</li>
               <li class="information-schedule-item">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="main-button" href="#">Напишите нам</a>
+            <a class="information-button" href="#">Напишите нам</a>
         </section>
         </section>
       </div>
-        <section class="subscribe">
-          <div class="page-container">
-            <div class="subscribe-top">
-              <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-              <p class="subscribe-text">
-                Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
-                распаковками, а также акции, спецпредложения и вот это вот всё.
-              </p>
-            </div>
-            <div class="subscribe-top">
-              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="email" name="subscribe-email" placeholder="Ваш e-mail"/>
-                <button class="subscribe-button" type="submit">Подписаться</button>
-              </form>
-              <span class="subscribe-free">Это бесплатно</span>
-            </div>
+      <section class="subscribe">
+        <div class="page-container">
+          <div class="subscribe-top">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-text">
+              Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами,
+              распаковками, а также акции, спецпредложения и вот это вот всё.
+            </p>
           </div>
-        </section>
+          <div class="subscribe-bottom">
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input type="email" class="subscribe-input" name="subscribe-email" placeholder="Ваш e-mail"/>
+              <button class="subscribe-button" type="submit">Подписаться</button>
+            </form>
+            <span class="subscribe-free">Это бесплатно</span>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
