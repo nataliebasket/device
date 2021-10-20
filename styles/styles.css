@@ -122,6 +122,9 @@ body {
 .navigation-catalog:hover .navigation-submenu-container {
   display: block;
 }
+.navigation-link:focus + .navigation-submenu-container {
+  display: block;
+}
 
 .navigation-user-block {
   display: grid;
@@ -241,6 +244,7 @@ body {
 .navigation-submenu-container {
   display: none;
   position: absolute;
+  height: 180px;
   left: -40px;
   z-index: 20;
   background-color: #FFE17F;
