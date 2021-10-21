@@ -606,9 +606,11 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 1160px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-column-gap: 40px;
+  /* justify-content: space-between;
+  width: 1160px; */
 }
 
 .productline-item {
@@ -624,20 +626,45 @@ body {
   text-decoration: none;
   display: block;
   padding-top: 193px;
+  background-image: linear-gradient(to bottom, #FFE17F 160px, transparent 160px);
   position: relative;
 }
 
-.productline-card::before {
+.productline-card:hover {
+  background-image: linear-gradient(to bottom, #FFC700 160px, transparent 160px);
+}
+
+.productline-vr::after {
   position: absolute;
   content: "";
   width: 160px;
   height: 160px;
+  box-sizing: border-box;
   top: 0px;
-  background-color: #FFE17F;
+  left: 0px;
   background-image: url("../img/other/popular-1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.productline-card:focus {
+  outline: 0;
+  color: #AF4FFF;
+}
+
+.productline-vr:focus::after {
+  border: 5px solid #AF4FFF;
+}
+
+.productline-card:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.productline-vr:active::after {
+  border: 0;
+  opacity: 0.3;
+}
+
 
 .services {
   margin: 0px;
