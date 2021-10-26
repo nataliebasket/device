@@ -566,6 +566,7 @@ body {
   position: absolute;
   bottom: 182px;
   right: 60px;
+  z-index: 10;
 }
 
 .slider-pagination-button {
