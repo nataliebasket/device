@@ -31,40 +31,40 @@
 
         <ul class="navigation-list">
           <li class="navigation-catalog">
-            <a class="navigation-link navigation-plus" href="#">Каталог товаров</a>
+            <a class="navigation-link" href="#">Каталог товаров</a>
             <!-- Подменю начало -->
             <div class="navigation-submenu-container">
-            <ul class="navigation-submenu-list">
-              <li>
-                <ul class="submenu-list">
-                  <li>
-                    <a class="submenu-link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li>
-                    <a class="submenu-link" href="monopods.html">Моноподы для cелфи</a></li>
-                  <li>
-                    <a class="submenu-link" href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul class="submenu-list">
-                  <li>
-                    <a class="submenu-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li>
-                    <a class="submenu-link" href="#">Умные часы</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <ul class="submenu-list">
-                  <li>
-                    <a class="submenu-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+              <ul class="navigation-submenu-list">
+                <li>
+                  <ul class="submenu-list">
+                    <li>
+                      <a class="submenu-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li>
+                      <a class="submenu-link" href="monopods.html">Моноподы для cелфи</a></li>
+                    <li>
+                      <a class="submenu-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="submenu-list">
+                    <li>
+                      <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li>
+                      <a class="submenu-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="submenu-list">
+                    <li>
+                      <a class="submenu-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
             <!-- Подменю конец -->
           </li>
@@ -86,17 +86,36 @@
         <h1 class="visually-hidden">Интернет-магазин гаджетов Device</h1>
         <section class="slider">
           <h2 class="visually-hidden">Гаджеты</h2>
+          
+          <button class="slider-button button-left" type="button">
+            <span class="visually-hidden">Предыдущая карточка.</span>
+          </button>
 
+          <button class="slider-button button-right" type="button">
+            <span class="visually-hidden">Следующая карточка.</span>
+          </button>
+
+          <ul class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-on">
+                <span class="visually-hidden">1 карточка.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button">
+                <span class="visually-hidden">2 карточка.</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 карточка.</span>
+              </button>
+            </li>
+          </ul>
           <article class="slider-card">
             <h3 class="visually-hidden">Квадрокоптер</h3>
             <div class="slider-image" >
               <img src="img/content/slider-1.png" width="560" height="560" alt="Квадрокоптер." />
-              <button class="slider-button button-left" type="button">
-                <span class="visually-hidden">Предыдущая карточка.</span>
-              </button>
-              <button class="slider-button button-right" type="button">
-                <span class="visually-hidden">Следующая карточка.</span>
-              </button>
             </div>
             <div class="slider-info">
               <span class="slider-number">01</span>
@@ -117,35 +136,12 @@
                 </li>
               </ul>
             </div>
-            <ul class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-on">
-                  <span class="visually-hidden">1 карточка.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button">
-                  <span class="visually-hidden">2 карточка.</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 карточка.</span>
-                </button>
-              </li>
-            </ul>
           </article>
 
           <article class="slider-card visually-hidden">
             <h3 class="visually-hidden">Фитнес-браслет</h3>
             <div class="slider-image" >
               <img class="slider-image" src="img/content/slider-2.png" width="560" height="560" alt="Фитнес-браслет." />
-              <button class="slider-button button-left" type="button">
-                <span class="visually-hidden">Предыдущая карточка.</span>
-              </button>
-              <button class="slider-button button-right" type="button">
-                <span class="visually-hidden">Следующая карточка.</span>
-              </button>
             </div>
             <div class="slider-info">
               <span class="slider-number">02</span>
@@ -168,12 +164,6 @@
             <h3 class="visually-hidden">Моноподы для cелфи</h3>
             <div class="slider-image" >
               <img class="slider-image" src="img/content/slider-3.png" width="560" height="560" alt="Моноподы для cелфи." />
-              <button class="slider-button button-left" type="button">
-              <span class="visually-hidden">Предыдущая карточка.</span>
-              </button>
-              <button class="slider-button button-right" type="button">
-                <span class="visually-hidden">Следующая карточка.</span>
-              </button>
             </div>
             <div class="slider-info">
               <span class="slider-number">03</span>
@@ -199,6 +189,8 @@
               </ul>
             </div>
           </article>
+
+
 
         </section>
 
@@ -296,7 +288,6 @@
             <p class="information-text-bold">Интернет-магазин «Девайс»</p>
             <p class="information-text">
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
-              <br>
               <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
             </p>
             <p class="information-text-bold">Время работы</p>
