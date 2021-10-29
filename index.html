@@ -12,9 +12,12 @@
           <img class="header-logo" src="img/header-logo.svg" width="145" height="36" alt="Логотип магазина Device." />
         </a>
         <div class="navigation-user-block">
-          <form class="search">
-            <input type="text" class="search-input search-input-active" placeholder="Поиск по сайту">
-            <button type="submit" class="search-button search-button-active">Найти</button>
+          <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="search-input" class="visually-hidden">Строка поиска</label>
+            <!-- Для активного состояния строки поиска задать класс у input - search-input-active -->
+            <input type="text" class="search-input" id="search-input" name="textofsearch" placeholder="Поиск по сайту">
+            <!-- Для активного состояния кнопки поиска задать класс у button - search-button-active -->
+            <button type="submit" class="search-button">Найти</button>
           </form>
           <ul class="navigation-user-list">
             <li>
@@ -298,6 +301,7 @@
         </section>
         </section>
       </div>
+
       <section class="subscribe">
         <div class="page-container">
           <div class="subscribe-top">
