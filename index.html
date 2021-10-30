@@ -410,7 +410,7 @@
 
       </div>
     </footer>
-    <div class="modal-container">
+    <!-- <div class="modal-container">
       <div class="modal modal-delivery">
         <h2 class="modal-title">Доставка под заказ</h2>
         <button class="modal-close-button">
@@ -422,14 +422,14 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-container-top">
             <p class="modal-group">
-                <label class="modal-form-title" for="modal-form-name">Ваше имя:</label>
-                <input class="modal-form-input modal-name" type="text" id="modal-form-name" name="name" placeholder="Имя Фамилия">
-                <span class="">Пожалуйста, представьтесь</span>
+                <label class="modal-form-title modal-name" for="modal-form-name">Ваше имя:</label>
+                <input class="modal-form-input" type="text" id="modal-form-name" name="name" placeholder="Имя Фамилия">
+                <span class="modal-form-input-caption red">Пожалуйста, представьтесь</span>
               </p>
             <p class="modal-group">
-              <label class="modal-form-title" for="modal-form-email">Ваш e-mail:</label>
-              <input class="modal-form-input modal-email" type="email" id="modal-form-email" name="email" placeholder="Введите e-mail">
-              <span class="">Забавный у вас адрес</span>
+              <label class="modal-form-title modal-email" for="modal-form-email">Ваш e-mail:</label>
+              <input class="modal-form-input" type="email" id="modal-form-email" name="email" placeholder="Введите e-mail">
+              <span class="modal-form-input-caption">Забавный у вас адрес</span>
             </p>
           </div>
           <div class="modal-container-bottom">
@@ -439,18 +439,20 @@
             </p>
             <p class="modal-group">
               <label class="modal-form-title" for="modal-form-count">Количество:</label>
-              <button class="info" type="button">
-                <span class="visually-hidden">Уменьшить количество.</span>
-              </button>
-              <input class="modal-form-input modal-name" type="text" id="modal-form-email" name="count" value="1">
-              <button class="info" type="button">
-                <span class="visually-hidden">Увеличить количество.</span>
-              </button>
+              <div class="modal-count">
+                <button class="button-count minus" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                </button>
+                <input class="modal-form-input modal-name" type="text" id="modal-form-email" name="count" value="1">
+                <button class="button-count plus" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                </button>
+              </div>
             </p>
           </div>
         </form>
 
       </div>
-    </div>
+    </div> -->
   </body>
 </html>

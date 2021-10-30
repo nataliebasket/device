@@ -687,6 +687,7 @@ body {
 .productline-card:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
 .productline-card:active::before {
   outline: 0;
 }
@@ -702,8 +703,6 @@ body {
 
 .productline-vr.productline-card::before {
   background-image: url("../img/other/popular-vr.svg");
-  /* background-repeat: no-repeat;
-  background-position: center; */
 }
 
 .productline-ms.productline-card::before {
@@ -727,9 +726,7 @@ body {
 
 .productline-qc.productline-card::before {
   background-image: url("../img/other/popular-qc.svg");
-
 }
-
 
 
 .services {
@@ -2644,7 +2641,7 @@ height: 25px;
 
 .modal-title {
   margin: 0;
-  margin-bottom: 58px;
+  margin-bottom: 67px;
   font-family: "Raleway", sans-serif;
   color: black;
   font-size: 50px;
@@ -2660,7 +2657,8 @@ height: 25px;
 .modal-container-top {
   display: grid;
   grid-template-columns: 360px 360px;
-  gap: 40px
+  gap: 40px;
+  margin-bottom: 14px;
 }
 
 .modal-container-bottom {
@@ -2676,14 +2674,69 @@ height: 25px;
   line-height: 20px;
   letter-spacing: -0.02em;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .modal-form-input {
   padding: 20px;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(0, 0, 0, 0.6);
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
   border: 0px;
   outline: none;
+  background-color: #F0F0F0;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  width: 52px;
+  box-sizing: border-box;
+}
+
+.modal-name::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  top: 59px;
+  right: 20px;
+  background-image: url("../img/other/user-modal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 222;
+}
+
+.modal-email::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  top: 59px;
+  right: 20px;
+  background-image: url("../img/other/mail-modal.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 222;
+}
+
+
+.modal-form-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.modal-form-input-caption {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.red {
+  color: #FF3D3D;
+}
+
+.button-count {
+  width: 54px;
+  height: 60px;
+  border: 0px;
   background-color: #F0F0F0;
 }
