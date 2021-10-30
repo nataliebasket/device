@@ -30,7 +30,7 @@
               <a class="navigation-user-link user-link-basket" href="#">Корзина</a>
               <span class="navigation-cart-count">2</span>
               <!-- Попап корзины. ля -->
-              <div class="popover-cart">
+              <div class="popover-cart popover-open">
                 <h2 class="visually-hidden">Корзина</h2>
                 <ul class="cart-items-list">
                   <li class="cart-item">
@@ -410,5 +410,47 @@
 
       </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <button class="modal-close-button">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 3L23 0L13 10L3 0L0 3L10 13L0 23L3 26L13 16L23 26L26 23L16 13L26 3Z"/>
+            </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal-container-top">
+            <p class="modal-group">
+                <label class="modal-form-title" for="modal-form-name">Ваше имя:</label>
+                <input class="modal-form-input modal-name" type="text" id="modal-form-name" name="name" placeholder="Имя Фамилия">
+                <span class="">Пожалуйста, представьтесь</span>
+              </p>
+            <p class="modal-group">
+              <label class="modal-form-title" for="modal-form-email">Ваш e-mail:</label>
+              <input class="modal-form-input modal-email" type="email" id="modal-form-email" name="email" placeholder="Введите e-mail">
+              <span class="">Забавный у вас адрес</span>
+            </p>
+          </div>
+          <div class="modal-container-bottom">
+            <p class="modal-group">
+              <label class="modal-form-title" for="modal-form-text">Что нужно привезти:</label>
+              <input class="modal-form-input modal-text" type="text" id="modal-form-text" name="text" placeholder="В свободной форме">
+            </p>
+            <p class="modal-group">
+              <label class="modal-form-title" for="modal-form-count">Количество:</label>
+              <button class="info" type="button">
+                <span class="visually-hidden">Уменьшить количество.</span>
+              </button>
+              <input class="modal-form-input modal-name" type="text" id="modal-form-email" name="count" value="1">
+              <button class="info" type="button">
+                <span class="visually-hidden">Увеличить количество.</span>
+              </button>
+            </p>
+          </div>
+        </form>
+
+      </div>
+    </div>
   </body>
 </html>

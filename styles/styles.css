@@ -2419,7 +2419,6 @@ transition: transform 0.2s;
   line-height: 17px;
   padding-top: 3px;
 text-align: center;
-
 }
 
 .popover-cart {
@@ -2437,6 +2436,11 @@ text-align: center;
   box-shadow: 0 10px 0 0 #E5E5E5;
   /* position: relative; */
   z-index: 30;
+  display: none;
+}
+
+.popover-open {
+  display: block;
 }
 
 .popover-cart::before {
@@ -2598,5 +2602,88 @@ height: 25px;
   outline: none;
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(229, 229, 229, 0.8);
+  z-index: 100;
+}
 
+.modal {
+  position: relative;
+  margin: auto;
+  padding-top: 73px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 88px;
+  background-color: #FFFFFF;
+}
 
+.modal-delivery {
+  width: 920px;
+  outline: 10px solid #000000;
+  outline-offset: -10px;
+  box-sizing: border-box;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 89px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 58px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.modal-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.modal-container-top {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  gap: 40px
+}
+
+.modal-container-bottom {
+  display: grid;
+  grid-template-columns: 560px 160px;
+  gap: 40px
+}
+
+.modal-form-title {
+  color:rgba(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 15px;
+}
+
+.modal-form-input {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  border: 0px;
+  outline: none;
+  background-color: #F0F0F0;
+}
