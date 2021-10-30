@@ -2652,19 +2652,21 @@ height: 25px;
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding: 0;
 }
 
 .modal-container-top {
   display: grid;
   grid-template-columns: 360px 360px;
   gap: 40px;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .modal-container-bottom {
   display: grid;
-  grid-template-columns: 560px 160px;
-  gap: 40px
+  grid-template-columns: 560px 16px;
+  gap: 40px;
+  margin-bottom: 30px;
 }
 
 .modal-form-title {
@@ -2679,16 +2681,14 @@ height: 25px;
 
 .modal-form-input {
   padding: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
+  padding-left: 20px;
+  padding-right: 40px;
   border: 0px;
   outline: none;
   background-color: #F0F0F0;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 6px;
-  width: 52px;
   box-sizing: border-box;
 }
 
@@ -2735,8 +2735,61 @@ height: 25px;
 }
 
 .button-count {
+  padding: 0px;
+  margin: 0px;
   width: 54px;
-  height: 60px;
+  /* height: 60px; */
   border: 0px;
   background-color: #F0F0F0;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-minus::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button-plus::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button-plus::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.modal-count {
+  width: 160px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.modal-form-count {
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  width: 52px;
+  margin: 0px;
+}
+
+.modal-info {
+
 }
