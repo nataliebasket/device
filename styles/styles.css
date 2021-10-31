@@ -2522,7 +2522,7 @@ text-align: center;
   justify-content: center;
   padding: 0px;
   width: 25px;
-height: 25px;
+  height: 25px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -2634,9 +2634,29 @@ height: 25px;
   right: 80px;
   width: 26px;
   height: 26px;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.modal-close-button:focus {
+  border: none;
+  outline: 5px solid #AF4FFF;
+  outline-offset: 10px;
+  border-radius: 50%;
+}
+
+.modal-close-button:hover svg {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.modal-close-button:active {
+  outline: none;
+}
+
+.modal-close-button:active svg {
+  fill: rgba(0, 0, 0, 0.3);
+  outline: none;
 }
 
 .modal-title {
@@ -2664,7 +2684,7 @@ height: 25px;
 
 .modal-container-bottom {
   display: grid;
-  grid-template-columns: 560px 16px;
+  grid-template-columns: 560px 160px;
   gap: 40px;
   margin-bottom: 30px;
 }
@@ -2691,6 +2711,19 @@ height: 25px;
   margin-bottom: 6px;
   box-sizing: border-box;
 }
+
+.modal-form-input:focus{
+  outline: 5px solid #AF4FFF;
+}
+
+.modal-form-input:active {
+  outline: 3px solid rgba(0, 0, 0);
+}
+
+.modal-form-input:invalid {
+  outline: 3px solid #FF3D3D;
+}
+
 
 .modal-name::before {
   content: "";
@@ -2790,6 +2823,22 @@ height: 25px;
   margin: 0px;
 }
 
-.modal-info {
-
+.modal-info::after {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  content: "i";
+  text-align: center;
+  padding-top: 3px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(0, 0, 0);
+  top: 0px;
+  right: 15px;
+  background-color:  #FFE17F;
 }
+
+
