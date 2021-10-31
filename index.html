@@ -410,8 +410,9 @@
 
       </div>
     </footer>
-    <div class="modal-container ">
-      <section class="modal modal-delivery">
+    <!-- Модальное окно доставки visually-hidden -->
+    <div class="modal-container">
+      <section class="modal-delivery">
         <h2 class="modal-title">Доставка под заказ</h2>
         <button class="modal-close-button">
           <svg width="26" height="26" viewBox="0 0 26 26" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -438,7 +439,16 @@
               <input class="modal-form-input modal-text" type="text" id="modal-form-text" name="text" placeholder="В свободной форме">
             </div>
             <div class="modal-group">
-              <label class="modal-form-title modal-info" for="modal-form-count">Количество:</label>
+              <div class="modal-form-count-div">
+                <label class="modal-form-title" for="modal-form-count">Количество:</label>
+                <button class="modal-info-button" type="button">i
+                  <span class="visually-hidden">Подсказка при наведении на кнопку.</span>
+                </button>
+                <div class="popover-modal">
+                  <p class="popover-modal-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.</p>
+                </div>
+              </div>
               <div class="modal-count">
                 <button class="button-count button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество.</span>
@@ -450,7 +460,7 @@
               </div>
             </div>
           </div>
-          <button class="services-button" type="submit">Отправить
+          <button class="services-button modal-button" type="submit">Отправить
             <span class="visually-hidden">Отправить данные</span>
           </button>
         </form>
