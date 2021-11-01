@@ -855,6 +855,11 @@ body {
   transition: transform 0.2s;
 }
 
+.services-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
 .services-button:hover::before {
   transform: scaleY(5);
 }
@@ -2071,7 +2076,6 @@ body {
   grid-column: 1 / 2;
 }
 
-/*НАЧАЛО  Стили за неактивной строки поиска */
 
 input.search-input {
   outline: none;
@@ -2086,11 +2090,11 @@ input.search-input {
   width: 516px;
   height: 40px;
   padding-left: 50px;
+  padding-right: 170px;
   border: 2px solid transparent;
   border-radius: 20px;
   background: #FFE17F;
   display:block;
-  /* position: relative; */
 }
 
 input.search-input:focus {
@@ -2109,32 +2113,16 @@ input.search-input:hover::placeholder {
   opacity: 0.6;
 }
 
-.search-button {
+.search-button-active {
   display: none;
 }
 
-/*КОНЕЦ  Стили за неактивной строки поиска */
+input.search-input:not(:placeholder-shown) ~ .search-button-active {
+  display: block;
+}
 
-
-/*НАЧАЛО  Стили за активной строки поиска */
- input.search-input-active {
-  outline: none;
-  border: 0;
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: black;
-  box-sizing: border-box;
-  width: 358px;
-  height: 40px;
-  padding-left: 50px;
-  padding-right: 10px;
+input.search-input:not(:placeholder-shown) {
   border: 2px solid black;
-  border-radius: 20px 0 0 20px;
-  background: #FFE17F;
-  display:block;
 }
 
 .search-button-active {
@@ -2771,15 +2759,11 @@ text-align: center;
 
 
 .modal-form-count {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 56px;
+  padding-right: 56px;
   text-align: center;
-  width: 52px;
+  width: 160px;
   margin: 0px;
-}
-
-.modal-count:focus-within .modal-form-count:focus {
-  outline: 2px solid red;
 }
 
 .modal-form-count-div {
@@ -2828,14 +2812,25 @@ text-align: center;
   position: relative;
 }
 
+/* .modal-form-input.modal-form-count:focus {
+  border: none;
+  outline: none;
+} */
+
 .button-count {
+  top: 50%;
+  transform: translateY(-50%);
   padding: 0px;
   margin: 0px;
   width: 54px;
   border: 0px;
   background-color: transparent;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+}
+
+.button-plus {
+  right: 0px;
 }
 
 .button-count:focus {
@@ -2848,7 +2843,7 @@ text-align: center;
   position: absolute;
   width: 32px;
   height: 32px;
-  top: 13px;
+  top: -7px;
   left: 11px;
   border-radius: 50%;
   opacity: 1;
