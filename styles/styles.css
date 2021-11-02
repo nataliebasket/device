@@ -40,7 +40,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   background-color: white;
-  color:  #444444;
+  color: rgb(68, 68, 68);
 }
 
 .main-container {
@@ -61,7 +61,7 @@ body {
 .main-button {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
@@ -91,7 +91,7 @@ body {
   height: 8px;
   top: 20px;
   left: 0px;
-  background: #FFE17F;
+  background: rgb(255, 225, 127);
   z-index: -1;
   transition: transform 0.2s;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .main-button:active.main-button::before {
-  background: #FFE17F;
+  background: rgb(255, 225, 127);
 }
 
 .main-button:focus {
@@ -114,16 +114,16 @@ body {
 }
 
 .main-button:focus::before {
-  background: #AF4FFF;
+  background: rgb(175, 79, 255);
 }
 
 .button-select {
-  background-color: #000000;
-  color: #FFE17F;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 225, 127);
 }
 
 .page-header {
-  color:black;
+  color:rgb(0, 0, 0);
 }
 
 .page-header-logo {
@@ -135,7 +135,8 @@ body {
 .page-header-logo:focus {
   border: 0;
   border-radius: 10px;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid rgb(175, 79, 255);
+  outline-offset: 3px;
 }
 
 .page-header-logo:active.page-header-logo:focus {
@@ -148,7 +149,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding-top: 17px;
-  background-image: linear-gradient(transparent 40px, #FFE17F 40px);
+  background-image: linear-gradient(transparent 40px, rgb(255, 225, 127) 40px);
 }
 
 .navigation-footer {
@@ -244,7 +245,7 @@ body {
   height: 2px;
   bottom: 8px;
   left: 12%;
-  background: black;
+  background: rgb(0, 0, 0);
 }
 
 .navigation-catalog {
@@ -307,7 +308,7 @@ body {
   height: 180px;
   left: -39px;
   z-index: 20;
-  background-color: #FFE17F;
+  background-color: rgb(255, 225, 127);
 }
 
 .submenu-list {
@@ -323,7 +324,7 @@ body {
   display: inline-block;
   padding: 15px 20px;
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: rgb(0, 0, 0);
   box-sizing: border-box;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -346,7 +347,7 @@ body {
   width: 99%;
   height: 100%;
   box-sizing: border-box;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);;
   border-radius: 25px;
   background-color: transparent;
 }
@@ -365,7 +366,7 @@ body {
   border-radius: 25px;
   padding: 3px 15px 5px 15px;
   margin-bottom: 10px;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
@@ -381,7 +382,7 @@ body {
 .submenu-link:focus {
   outline: none;
   border: 0;
-  box-shadow: 0px 0px 0px 2px #AF4FFF;
+  box-shadow: 0px 0px 0px 2px rgb(175, 79, 255);
 }
 
 .submenu-link:active.submenu-link:focus {
@@ -392,7 +393,7 @@ body {
 .navigation-user-link {
   display:block;
   /* padding: 10px 21px; */
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -413,7 +414,7 @@ body {
   width: 100%;
   height: 40px;
   box-sizing: border-box;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
   border-radius: 20px;
   background-color: transparent;
 }
@@ -450,8 +451,8 @@ body {
 
 
 .main-index {
-  color:black;
-  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
 .page-container {
@@ -467,7 +468,7 @@ body {
 .slider-card {
   display:flex;
   justify-content: space-between;
-  background-image: linear-gradient(#FFE17F 150px, transparent 150px);
+  background-image: linear-gradient(rgb(255, 225, 127) 150px, transparent 150px);
 }
 
 .slider-image {
@@ -510,7 +511,7 @@ body {
 .slider-description {
   font-size: 18px;
   line-height: 30px;
-  color: #444444;
+  color: rgb(68, 68, 68);
   margin: 0px;
   margin-bottom: 37px;
 }
@@ -544,7 +545,7 @@ body {
 
 .slider-button:focus {
   outline: 0;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
   box-sizing: border-box;
   border-radius: 6px;
 }
@@ -567,26 +568,26 @@ body {
   height: 13px;
   box-sizing: border-box;
   background-color: transparent;
-  border: 2px solid #000000;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 50%;
   cursor: pointer;
   padding: 1px;
 }
 
 .slider-on {
-  background: #000000;
+  background: rgb(0, 0, 0);
 }
 
 .slider-pagination-button:focus {
   outline: 0;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
 }
 .slider-pagination-button:hover {
   opacity: 0.6;
 }
 .slider-pagination-button:active {
   opacity: 0.3;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .button-left {
@@ -626,7 +627,7 @@ body {
 .features-name {
   font-size: 16px;
   line-height: 30px;
-  color:  #444444;
+  color:  rgb(68, 68, 68);
 }
 
 .productline {
@@ -654,14 +655,14 @@ body {
 
 .productline-card {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
   text-decoration: none;
   display: block;
   padding-top: 193px;
-  background-image: linear-gradient(to bottom, #FFE17F 160px, transparent 160px);
+  background-image: linear-gradient(to bottom, rgb(255, 225, 127) 160px, transparent 160px);
 }
 
 .productline-card::before {
@@ -676,13 +677,13 @@ body {
   background-position: center;
 }
 .productline-card:focus::before {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: -5px;
 }
 
 .productline-card:focus {
   outline: 0;
-  color: #AF4FFF;
+  color: rgb(175, 79, 255);
 }
 .productline-card:active {
   color: rgba(0, 0, 0, 0.3);
@@ -693,7 +694,7 @@ body {
 }
 
 .productline-card:hover {
-  background-image: linear-gradient(to bottom, #FFC700 160px, transparent 160px);
+  background-image: linear-gradient(to bottom, rgb(255, 199, 0) 160px, transparent 160px);
 }
 
 .productline-card:active.productline-card::before {
@@ -732,7 +733,7 @@ body {
 .services {
   margin: 0px;
   margin-bottom: 90px;
-  background-image: linear-gradient(transparent 100px, #F0F0F0 100px);
+  background-image: linear-gradient(transparent 100px, rgb(240, 240, 240) 100px);
 }
 
 .services-cards {
@@ -773,7 +774,7 @@ body {
 
 .services-card-name {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 50px;
   line-height: 50px;
   margin: 0px;
@@ -782,7 +783,7 @@ body {
 }
 .services-card-text {
   margin: 0px;
-  color: #444444;
+  color: rgb(68, 68, 68);
   width: 497px;
 }
 
@@ -797,7 +798,7 @@ body {
 .services-blocks::before {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   width: 7px;
   height: 319px;
   top: 0px;
@@ -824,7 +825,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
-  color: black;
+  color: rgb(0, 0, 0);
   background-color: transparent;
   border-width: 0px;
   text-transform: uppercase;
@@ -850,7 +851,7 @@ body {
   height: 8px;
   top: 17px;
   left: 0px;
-  background: #FFC700;
+  background: rgb(255, 199, 0);
   z-index: -1;
   transition: transform 0.2s;
 }
@@ -870,8 +871,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
-  background-color: black;
-  color: #FFE17F;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 225, 127);
   border-width: 0px;
   text-transform: uppercase;
   text-align: center;
@@ -884,7 +885,7 @@ body {
 .services-button-active::before {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   width: 120px;
   height: 40px;
   top: 0px;
@@ -908,13 +909,13 @@ body {
   height: 8px;
   top: 17px;
   left: 0px;
-  background: #AF4FFF;
+  background: rgb(175, 79, 255);
   z-index: -1;
   transition: transform 0.2s;
 }
 
 .services-button:active::before {
-  background: #FFC700;
+  background: rgb(255, 199, 0);
 }
 
 .delivery {
@@ -928,8 +929,8 @@ body {
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.2em;
-  color: #000000;
-  background-image: linear-gradient(to right, #FFE17F 125px, #F0F0F0 125px);
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to right, rgb(255, 225, 127) 125px, rgb(240, 240, 240) 125px);
   display: block;
   padding-top: 38px;
   padding-bottom: 39px;
@@ -943,11 +944,11 @@ body {
 
 .delivery-order:focus {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
 }
 
 .delivery-order:hover {
-  background-image: linear-gradient(to right, #FFC700 125px, #EBEBEB 125px);
+  background-image: linear-gradient(to right, rgb(255, 199, 0) 125px, rgb(235, 235, 235) 125px);
 }
 
 .delivery-order::before {
@@ -985,7 +986,7 @@ body {
 
 .delivery-order:hover::after {
   color:rgba(0,0,0);
-  background: #DCDCDC;
+  background: rgb(220, 220, 220);
 }
 
 .delivery-order:active::after {
@@ -993,7 +994,7 @@ body {
 }
 
 .delivery-order:active {
-  background-color: #EBEBEB;
+  background-color: rgb(235, 235, 235);
   color:rgba(0, 0, 0, 0.3);
 }
 
@@ -1038,7 +1039,7 @@ body {
 .information-title::before {
   position: absolute;
   content: "";
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   width: 80px;
   height: 7px;
   top: -50px;
@@ -1066,7 +1067,7 @@ body {
 .information-list-item::before {
   content: "";
   position: absolute;
-  background-color: #FFC700;
+  background-color: rgb(255, 199, 0);
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1075,7 +1076,7 @@ body {
 }
 
 .information-text {
-  color: #444444;
+  color: rgb(68, 68, 68);
   margin: 0px;
   margin-bottom: 30px;
 }
@@ -1084,7 +1085,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #444444;
+  color: rgb(68, 68, 68);
 }
 
 .information-schedule {
@@ -1093,7 +1094,7 @@ body {
 }
 
 .contacts-phone {
-  color: #444444;
+  color: rgb(68, 68, 68);
   font-size: 18px;
   line-height: 30px;
   border-radius: 25px;
@@ -1101,17 +1102,17 @@ body {
 
 .contacts-phone:focus {
   border: 0;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid rgb(175, 79, 255);
   outline-offset: 2px;
 }
 
 
 .information-schedule-item {
-  color: #444444;
+  color: rgb(68, 68, 68);
 }
 
 .subscribe {
-  background-color: #F0F0F0;
+  background-color: rgb(240, 240, 240);
   padding-top: 75px;
   padding-bottom: 129px;
   margin: 0 auto;
@@ -1140,7 +1141,7 @@ body {
 
 .subscribe-text {
   margin: 0px;
-  color: #444444;
+  color: rgb(68, 68, 68);
   width: 560px;
   align-self: flex-end;
 }
@@ -1175,7 +1176,7 @@ body {
 
 .subscribe-input:focus {
   color: rgb(68, 68, 68, 0.5);
-  background-color: #DCDCDC;
+  background-color: rgb(220, 220, 220);
   border: 0;
 }
 
@@ -1186,7 +1187,7 @@ body {
 }
 
 .subscribe-input:invalid {
-  border-bottom: 3px solid #FF3D3D;
+  border-bottom: 3px solid rgb(255, 61, 61);
 }
 
 .subscribe-input:hover::placeholder {
@@ -1199,7 +1200,7 @@ body {
 
 .subscribe-button {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -1219,7 +1220,7 @@ body {
 
 .subscribe-button:focus {
   outline: 0;
-  border: 3px solid #AF4FFF;
+  border: 3px solid rgb(175, 79, 255);
 }
 
 .subscribe-button:hover {
@@ -1236,7 +1237,7 @@ body {
 }
 
 .subscribe-free {
-  color: #444444;
+  color: rgb(68, 68, 68);
   position: relative;
   line-height: 30px;
 }
@@ -1255,8 +1256,8 @@ body {
 /*--- Footer --- */
 
 .page-footer {
-  background-color: #444444;
-  color: #ffffff;
+  background-color: rgb(68, 68, 68);
+  color: rgb(255, 255, 255);
   padding-top: 62px;
   padding-bottom: 61px;
   width: 100vw;
@@ -1300,14 +1301,14 @@ body {
   content: "";
   width: 80px;
   height: 7px;
-  background: #FFC700;
+  background: rgb(255, 199, 0);
   transform: translateY(-50%);
 }
 
 .footer-links {
   display: inline-block;
   font-family: "Raleway", sans-serif;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -1334,7 +1335,7 @@ body {
   top: 50%;
   left: -15%;
   transform: translateY(-50%);
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
   border-radius: 25px;
   background-color: transparent;
 }
@@ -1350,7 +1351,7 @@ body {
 }
 
 .footer-links:hover {
-  color: #FFC700;
+  color: rgb(255, 199, 0);
 }
 
 .underline-footer:hover::before {
@@ -1360,14 +1361,8 @@ body {
   height: 2px;
   top: 25px;
   left: 0px;
-  background: #FFC700;
+  background: rgb(255, 199, 0);
 }
-
-/* .underline-footer:hover {
-  text-decoration: underline #FFC700;
-  text-underline-offset: 8px;
-  text-decoration-thickness: 2px;
-} */
 
 .footer-links-list {
   padding: 0px;
@@ -1377,7 +1372,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 28px;
-  /* gap: 28px; */
   margin-bottom: 25px;
 }
 
@@ -1404,7 +1398,7 @@ body {
 }
 
 .footer-social-button:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: -1px;
   position: relative;
   background-color: inherit;
@@ -1434,7 +1428,6 @@ body {
   mask: url(../img/other/twitter.svg) center no-repeat;
 }
 
-
 .footer-facebook-button {
   background-image: url("../img/other/facebook.svg");
 }
@@ -1448,7 +1441,7 @@ body {
 }
 
 .footer-social-button:hover {
-  background-color: #FFC700;
+  background-color: rgb(255, 199, 0);
 }
 
 .footer-social-button:active::after {
@@ -1472,14 +1465,14 @@ body {
 }
 
 .footer-phone-number {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
 }
 
 .footer-phone-number:hover {
-  color: #FFC700;
+  color: rgb(255, 199, 0);
 }
 
 .footer-phone-number:focus {
@@ -1497,7 +1490,7 @@ body {
   left: -8%;
   transform: translateY(-50%);
   box-sizing: border-box;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
   border-radius: 25px;
   background-color: transparent;
 }
@@ -1532,7 +1525,7 @@ body {
   height: 53px;
   top: -10px;
   left: -10px;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
   box-sizing: border-box;
   border-radius: 10px;
   background-color: transparent;
@@ -1561,7 +1554,7 @@ body {
 
 .inner-header-title {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 50px;
   line-height: 50px;
   margin: 0px;
@@ -1608,7 +1601,7 @@ body {
 
 .breadcrumbs-link:focus {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: 5px;
 }
 
@@ -1626,7 +1619,7 @@ body {
 
 .catalog-products-title-right {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -1657,7 +1650,7 @@ body {
 
 .catalog-button-updown:focus {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
 }
 
 .catalog-button-updown:hover .button-updown {
@@ -1704,7 +1697,7 @@ body {
 
 .select-control:focus {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: 5px;
 }
 
@@ -1756,7 +1749,7 @@ body {
   position: relative;
   height: 2px;
   margin-bottom: 16px;
-  background-color: #DCDCDC;;
+  background-color: rgb(220, 220, 220);
   border-radius: 2px;
 }
 
@@ -1773,11 +1766,10 @@ body {
 }
 
 .price-toggle {
-  /* position: absolute; */
   width: 18px;
   height: 18px;
-  background: #EBEBEB;
-  border: 2px solid #242424;
+  background: rgb(235, 235, 235);
+  border: 2px solid rgb(36, 36, 36);
   border-radius: 50%;
   cursor: pointer;
   margin-bottom: 11px;
@@ -1796,7 +1788,7 @@ body {
 }
 
 .price-toggle:focus {
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
   outline: none;
 }
 .price-toggle:focus + .catalog-filter-label {
@@ -1872,7 +1864,7 @@ body {
   height: 8px;
   border-radius: 50%;
   content: "";
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 
@@ -1958,23 +1950,23 @@ body {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
 .product-card-title:focus {
   border: 0;
   outline: none;
-  color: #AF4FFF;
+  color: rgb(175, 79, 255);
 }
 
 .product-card-title:focus + .product-card-price {
-  color: #AF4FFF;
+  color: rgb(175, 79, 255);
 }
 
 .product-card:focus-within .product-card-link {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
 }
 
 .memo-new {
@@ -1986,7 +1978,7 @@ body {
 
 .button-loadmore {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -2004,11 +1996,11 @@ body {
 
 .button-loadmore:focus {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
 }
 
 .button-loadmore:hover {
-  outline: 3px solid #000000;
+  outline: 3px solid rgb(0, 0, 0);
 }
 
 .button-loadmore:active {
@@ -2031,7 +2023,7 @@ body {
 }
 
 .pagination-catalog {
-  background-color:  #EBEBEB;
+  background-color:  rgb(235, 235, 235);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2041,7 +2033,7 @@ body {
 .pagination-link {
   display: block;
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -2054,17 +2046,17 @@ body {
 
 .pagination-link:focus {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: -5px;
 }
 
 .pagination-link:hover {
-  background-color: #DCDCDC;
+  background-color: rgb(220, 220, 220);
   outline: none;
 }
 
 .pagination-link:active {
-  background-color: #DCDCDC;
+  background-color: rgb(220, 220, 220);
   color: rgba(0,0,0,0.3);
 }
 
@@ -2086,7 +2078,7 @@ body {
 }
 
 .pagination-page:focus {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: -5px;
 }
 
@@ -2112,7 +2104,7 @@ input.search-input {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: black;
+  color: rgb(0, 0, 0);
   box-sizing: border-box;
   width: 516px;
   height: 40px;
@@ -2120,23 +2112,23 @@ input.search-input {
   padding-right: 170px;
   border: 2px solid transparent;
   border-radius: 20px;
-  background: #FFE17F;
+  background: rgb(255, 225, 127);
   display:block;
 }
 
 input.search-input:focus {
   outline: none;
   border: 0;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
 }
 
 input.search-input::placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
   opacity: 0.3;
 }
 
 input.search-input:hover::placeholder {
-  color: black;
+  color: rgb(0, 0, 0);
   opacity: 0.6;
 }
 
@@ -2149,7 +2141,7 @@ input.search-input:not(:placeholder-shown) ~ .search-button-active {
 }
 
 input.search-input:not(:placeholder-shown) {
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .search-button-active {
@@ -2158,33 +2150,33 @@ input.search-input:not(:placeholder-shown) {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: black;
+  color: rgb(0, 0, 0);
   position: absolute;
   top: 0;
   right: 0px;
   width: 160px;
   height: 40px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 0 20px 20px 0;
-  background: #FFE17F;
+  background: rgb(255, 225, 127);
   cursor: pointer;
 }
 
 .search-button-active:focus {
   outline: none;
   border: 0;
-  border: 2px solid #AF4FFF;
+  border: 2px solid rgb(175, 79, 255);
 }
 
 .search-button-active:hover {
-  border: 2px solid black;
-  background: black;
-  color: #FFFFFF;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .search-button-active:active {
-  border: 2px solid black;
-  background: black;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(0, 0, 0);
   color: rgba(255, 255, 255, 0.3);
 }
 /* КОНЕЦ - Стили за активной строки поиска */
@@ -2287,7 +2279,7 @@ input.search-input:not(:placeholder-shown) {
 .product-card-button {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
@@ -2311,7 +2303,7 @@ width: 180px;
 height: 8px;
 top: 20px;
 left:45px;
-background:  #FFC700;
+background:  rgb(255, 199, 0);
 z-index: -1;
 transition: transform 0.2s;
 }
@@ -2330,7 +2322,7 @@ transition: transform 0.2s;
   padding-right: 1px;
   text-align: end;
   font-size: 18px;
-  color: #444444;
+  color: rgb(68, 68, 68);
   font-weight: 400;
 }
 
@@ -2345,7 +2337,7 @@ transition: transform 0.2s;
 
 .filter-title-left {
   font-family: "Raleway", sans-serif;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
@@ -2354,7 +2346,7 @@ transition: transform 0.2s;
   padding: 0px;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #DCDCDC;
+  background-color: rgb(220, 220, 220);
   padding-left: 60px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -2367,7 +2359,7 @@ transition: transform 0.2s;
   padding: 0px;
   /* padding-top: 25px;
   padding-bottom: 25px; */
-  background-color: #EBEBEB;
+  background-color: rgb(235, 235, 235);
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   position: relative;
@@ -2379,15 +2371,15 @@ transition: transform 0.2s;
   position: absolute;
   height: 100%;
   width: 100vw;
-  background-color: #DCDCDC;
+  background-color: rgb(220, 220, 220);
   top: 0px;
   left: -100vw;
   z-index: -1;
-  box-shadow: -100vw 0px #DCDCDC, 100vw 0px #EBEBEB;
+  box-shadow: -100vw 0px rgb(220, 220, 220), 100vw 0px rgb(235, 235, 235);
 }
 
 .filter-left-column {
-  background-color: #EBEBEB;
+  background-color: rgb(235, 235, 235);
   color:rgba(0, 0, 0);
   padding-left: 59px;
   padding-right: 68px;
@@ -2411,11 +2403,11 @@ transition: transform 0.2s;
   position: absolute;
   height: 100%;
   width: 100vw;
-  background-color: #EBEBEB;
+  background-color: rgb(235, 235, 235);
   top: 0px;
   left: -100vw;
   z-index: -1;
-  box-shadow: -100vw 0px #EBEBEB, 100vw 0px #ffffff;
+  box-shadow: -100vw 0px rgb(235, 235, 235), 100vw 0px rgb(255, 255, 255);
 }
 
 .catalog-button {
@@ -2430,7 +2422,7 @@ transition: transform 0.2s;
   width: 21px;
   height: 21px;
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   font-size: 14px;
   line-height: 17px;
@@ -2450,8 +2442,7 @@ text-align: center;
   color: rgba(255, 255, 255);
   background-color: rgba(0, 0, 0);
   min-height: 229px;
-  box-shadow: 0 10px 0 0 #E5E5E5;
-  /* position: relative; */
+  box-shadow: 0 10px 0 0 rgb(229, 229, 229);
   z-index: 30;
   display: none;
 }
@@ -2463,7 +2454,7 @@ text-align: center;
 .popover-cart::before {
   position: absolute;
   content: "";
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   width:10px;
   height: 10px;
   top: -5px;
@@ -2518,7 +2509,7 @@ text-align: center;
   color: rgba(175, 79, 255, 1);
 }
 .cart-item-name:focus::before {
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
 }
 
 .cart-item-name:hover {
@@ -2553,7 +2544,7 @@ text-align: center;
 
 .delete-cart-item:focus {
   border: none;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid rgb(175, 79, 255);
   outline-offset: -3px;
   border-radius: 50%;
 }
@@ -2575,8 +2566,8 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   padding: 11px 20px;
-  color: #FFFFFF;
-  background-color: #1A1A1A;
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 26, 26);
 }
 
 .cart-text {
@@ -2605,16 +2596,16 @@ text-align: center;
 
 .open-cart:focus {
   border: 0;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: -1px;
 }
 
 .open-cart:hover {
-  background-color: #FFE17F;
+  background-color: rgb(255, 225, 127);
 }
 
 .open-cart:active {
-  background-color: #FFE17F;
+  background-color: rgb(255, 225, 127);
   color: rgba(0, 0, 0, 0.3);
   outline: none;
 }
@@ -2637,10 +2628,10 @@ text-align: center;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 78px;
-  background-color: #FFFFFF;
-  color:#000000;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
   width: 920px;
-  outline: 10px solid #000000;
+  outline: 10px solid rgb(0, 0, 0);
   outline-offset: -10px;
   box-sizing: border-box;
 }
@@ -2659,7 +2650,7 @@ text-align: center;
 
 .modal-close-button:focus {
   border: none;
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
   outline-offset: 10px;
   border-radius: 50%;
 }
@@ -2681,7 +2672,7 @@ text-align: center;
   margin: 0;
   margin-bottom: 67px;
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 50px;
   line-height: 50px;
 }
@@ -2724,7 +2715,7 @@ text-align: center;
   padding-right: 40px;
   border: 0px;
   outline: none;
-  background-color: #F0F0F0;
+  background-color: rgb(240, 240, 240);
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 6px;
@@ -2732,7 +2723,7 @@ text-align: center;
 }
 
 .modal-form-input:focus{
-  outline: 5px solid #AF4FFF;
+  outline: 5px solid rgb(175, 79, 255);
 }
 
 .modal-form-input:active {
@@ -2740,7 +2731,7 @@ text-align: center;
 }
 
 .modal-form-input:invalid {
-  outline: 3px solid #FF3D3D;
+  outline: 3px solid rgb(255, 61, 61);
 }
 
 .modal-name::before {
@@ -2781,7 +2772,7 @@ text-align: center;
 }
 
 .red {
-  color: #FF3D3D;
+  color: rgb(255, 61, 61);
 }
 
 
@@ -2815,7 +2806,7 @@ text-align: center;
   top: 0px;
   right: 15px;
   cursor: pointer;
-  background-color:  #FFE17F;
+  background-color:  rgb(255, 225, 127);
 }
 
 .modal-info-button:hover + .popover-modal {
@@ -2835,14 +2826,9 @@ text-align: center;
   width: 160px;
   display: flex;
   box-sizing: border-box;
-  background-color: #F0F0F0;
+  background-color: rgb(240, 240, 240);
   position: relative;
 }
-
-/* .modal-form-input.modal-form-count:focus {
-  border: none;
-  outline: none;
-} */
 
 .button-count {
   top: 50%;
@@ -2874,7 +2860,7 @@ text-align: center;
   left: 11px;
   border-radius: 50%;
   opacity: 1;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid rgb(175, 79, 255);
 }
 
 .button-count:hover svg {
@@ -2900,7 +2886,7 @@ text-align: center;
   color: rgba(255, 255, 255);
   background-color: rgba(0, 0, 0);
   min-height: 160px;
-  box-shadow: 0 10px 0 0 #E5E5E5;
+  box-shadow: 0 10px 0 0 rgb(229, 229, 229);
   z-index: 30;
   display: none;
 }
@@ -2915,7 +2901,7 @@ text-align: center;
 .popover-modal::before {
   position: absolute;
   content: "";
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   width:12px;
   height: 12px;
   top: -4px;
