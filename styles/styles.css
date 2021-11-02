@@ -1152,6 +1152,7 @@ body {
 
 .subscribe-input {
   padding: 0;
+  padding-left: 3px;
   box-sizing: border-box;
   width: 600px;
   height: 55px;
@@ -1170,28 +1171,23 @@ body {
   line-height: 30px;
 }
 
+
+
 .subscribe-input:focus {
   color: rgb(68, 68, 68, 0.5);
   background-color: #DCDCDC;
   border: 0;
 }
 
-/* .subscribe-input:focus {
+.subscribe-input:not(:placeholder-shown) {
+  background-color: transparent;
+  color:rgba(0, 0, 0);
   border-bottom: 3px solid rgba(0,0,0);
-  color: #000000;
-} */
+}
 
 .subscribe-input:invalid {
   border-bottom: 3px solid #FF3D3D;
 }
-
-
-
-/* .subscribe-input:valid {
-  outline: none;
-  border: 0px;
-  border-bottom: 3px solid green;
-} */
 
 .subscribe-input:hover::placeholder {
   color: rgb(68, 68, 68, 0.7);
@@ -1200,14 +1196,6 @@ body {
 .subscribe-input:hover {
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
-
-
-
-/* .subscribe-input:active {
-  outline: none;
-  border: 0px;
-  border-bottom: 3px solid green;
-} */
 
 .subscribe-button {
   font-family: "Raleway", sans-serif;
@@ -1218,7 +1206,6 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   width: 260px;
-  /* height: 55px; */
   padding: 0;
   margin: 0;
   padding-top: 13px;
@@ -1779,23 +1766,21 @@ body {
   background-color: rgba(0, 0, 0);
 }
 
+.price-toggle-with {
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+}
+
 .price-toggle {
-  position: absolute;
+  /* position: absolute; */
   width: 18px;
   height: 18px;
   background: #EBEBEB;
   border: 2px solid #242424;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.price-toggle:focus {
-  border-color: #AF4FFF;
-}
-
-.price-toggle:active {
-  background: rgba(0, 0, 0);
-  border-color: rgba(0, 0, 0);
+  margin-bottom: 11px;
 }
 
 .price-toggle-min {
@@ -1805,25 +1790,38 @@ body {
 
 .price-toggle-max {
   top: -8px;
-  right: -8px;
+  right: -50%;
+  transform: translateX(-50%);
+  align-items: center;
 }
 
-.price-inputs {
-  display: flex;
-  justify-content: space-between;
-  margin-left: -5px;
+.price-toggle:focus {
+  border: 2px solid #AF4FFF;
+  outline: none;
 }
+.price-toggle:focus + .catalog-filter-label {
+ color: rgba(175, 79, 255, 0.3);
+}
+
+.price-toggle:active {
+  background: rgba(0, 0, 0);
+  border: none;
+  outline: none;
+}
+.price-toggle:active + .catalog-filter-label {
+ color: rgba(0, 0, 0);
+}
+
 
 .catalog-filter-label {
-  /* display: flex; */
+  display: inline-block;
   color:rgba(0, 0, 0, 0.3);
   font-size: 15px;
   line-height: 18px;
-
 }
 
 .catalog-filter-input {
-  width: 30px;
+  width: 50px;
   padding: 0 2px;
   font-family: inherit;
   font-size: inherit;
@@ -1832,6 +1830,12 @@ body {
   background-color: transparent;
   border: none;
   appearance: textfield;
+}
+
+.catalog-filter-input:focus {
+  border: none;
+  outline:  1px solid rgba(175, 79, 255);
+  outline-offset: 2px;
 }
 
 .catalog-filter-input::-webkit-outer-spin-button,
@@ -1852,6 +1856,10 @@ body {
   background-position: center;
 }
 
+.control-input[type="checkbox"]:checked:focus + .control-mark::before {
+  background-image: url("../img/other/tick-violet.svg");
+}
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -1862,11 +1870,12 @@ body {
   left: 4px;
   width: 8px;
   height: 8px;
-  /* background-color: rgba(0, 0, 0); */
-  /* background-color: green; */
   border-radius: 50%;
   content: "";
+  background-color: black;
 }
+
+
 
 .control-label {
   position: relative;
@@ -1881,21 +1890,34 @@ body {
   border-color: rgba(175, 79, 255, 1);
 }
 
-.control-label:focus-within .control-mark::before {
-  /* border-color: rgba(175, 79, 255, 1); */
-  background-color: rgba(175, 79, 255, 1);
-}
-
 .control-label:hover {
   color: rgba(0,0,0,0.5);
 }
-
 .control-label:hover .control-mark {
   border-color: rgba(0,0,0,0.5);
 }
 
+.control-input[type="checkbox"]:checked:hover + .control-mark::before {
+  background-image: url("../img/other/tick.svg");
+  opacity: 0.5;
+}
+
+.control-input[type="radio"]:checked:focus + .control-mark::before {
+  background-color: rgba(175, 79, 255, 1);
+}
+
 .control-label:hover .control-mark::before {
-  background-color: red;
+  opacity: 0.5;
+}
+
+.control-label:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.control-label:active .control-mark {
+  border-color: rgba(0,0,0,0.2);
+}
+.control-label:active .control-mark::before {
+  opacity: 0.2;
 }
 
 .control-mark {
@@ -1953,6 +1975,11 @@ body {
 .product-card:focus-within .product-card-link {
   border: 0;
   outline: 5px solid #AF4FFF;
+}
+
+.memo-new {
+  position:absolute;
+
 }
 
 
@@ -2893,7 +2920,4 @@ text-align: center;
   height: 12px;
   top: -4px;
   right: 47px;
-  transform: translateX(50%) rotate(45deg);
-}
-
-
+  transfor

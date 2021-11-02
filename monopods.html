@@ -14,10 +14,8 @@
         <div class="navigation-user-block">
           <form class="search" action="https://echo.htmlacademy.ru/" method="post">
             <label for="search-input" class="visually-hidden">Строка поиска</label>
-            <!-- Для активного состояния строки поиска задать класс у input - search-input-active -->
             <input type="text" class="search-input" id="search-input" name="textofsearch" placeholder="Поиск по сайту">
-            <!-- Для активного состояния кнопки поиска задать класс у button - search-button-active -->
-            <button type="submit" class="search-button">Найти</button>
+            <button type="submit" class="search-button-active">Найти</button>
           </form>
           <ul class="navigation-user-list">
             <li>
@@ -141,24 +139,30 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
+
                 <div class="price-scale">
                   <div class="price-scale-active" style="left: 6px; right: 80px">
-                    <button class="price-toggle price-toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="price-toggle price-toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
+
+                    <div class="price-toggle-with price-toggle-min">
+                      <button class="price-toggle" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <label class="catalog-filter-label">
+                        от <input class="catalog-filter-input" value="0" type="number" name="min-price">
+                      </label>
+                    </div>
+
+                    <div class="price-toggle-with price-toggle-max">
+                      <button class="price-toggle" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                      <label class="catalog-filter-label">
+                        до <input class="catalog-filter-input" value="5000" type="number" name="max-price" style="width: 37px">
+                      </label>
+                    </div>
                   </div>
                 </div>
-                <div class="price-inputs" style="width: 155px">
-                  <label class="catalog-filter-label">
-                    от <input class="catalog-filter-input" value="0" type="number" name="min-price">
-                  </label>
-                  <label class="catalog-filter-label">
-                    до <input class="catalog-filter-input" value="5000" type="number" name="max-price" style="width: 37px">
-                  </label>
-                </div>
+
               </fieldset>
 
               <fieldset class="catalog-filter-group">
@@ -265,6 +269,7 @@
                 <h3 class="visually-hidden">Селфи-палка «Следуй за мной»</h3>
                 <a class="product-card-title" href="#">Селфи-палка «Следуй за мной»</a>
                 <b class="product-card-price">4 900 ₽</b>
+                <span class="memo-new"></span>
               </article>
             </div>
 

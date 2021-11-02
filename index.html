@@ -14,7 +14,7 @@
         <div class="navigation-user-block">
           <form class="search" action="https://echo.htmlacademy.ru/" method="post">
             <label for="search-input" class="visually-hidden">Строка поиска</label>
-            <input type="text" class="search-input" id="search-input" name="textofsearch" placeholder="Поиск по сайту">
+            <input type="text" class="search-input" id="search-input" name="textofsearch" required placeholder="Поиск по сайту">
             <button type="submit" class="search-button-active">Найти</button>
           </form>
           <ul class="navigation-user-list">
@@ -27,8 +27,8 @@
             <li  class="link-right">
               <a class="navigation-user-link user-link-basket" href="#">Корзина</a>
               <span class="navigation-cart-count">2</span>
-              <!-- Попап корзины. ля -->
-              <div class="popover-cart popover-open">
+              <!-- Попап корзины. Для открытия добавить класс popover-open-->
+              <div class="popover-cart">
                 <h2 class="visually-hidden">Корзина</h2>
                 <ul class="cart-items-list">
                   <li class="cart-item">
@@ -52,6 +52,7 @@
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
+                </ul>
                   <div class="cart-total">
                     <span class="cart-count cart-text">Товаров: 2</span>
                     <span class="cart-sum cart-text">Сумма: 2000 ₽</span>
@@ -290,6 +291,7 @@
       </section>
 
       <section class="delivery page-container">
+        <h2 class="visually-hidden">Доставка под заказ</h2>
         <a class="delivery-order" href="#">Доставим редкий товар под заказ</a>
       </section>
 
@@ -343,7 +345,7 @@
           </div>
           <div class="subscribe-bottom">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" class="subscribe-input" name="subscribe-email" placeholder="Ваш e-mail"/>
+              <input type="email" class="subscribe-input" name="subscribe-email" required placeholder="Ваш e-mail"/>
               <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
             <span class="subscribe-free">Это бесплатно</span>
@@ -409,7 +411,7 @@
       </div>
     </footer>
     <!-- Модальное окно доставки visually-hidden -->
-    <div class="modal-container">
+    <div class="modal-container visually-hidden">
       <section class="modal-delivery">
         <h2 class="modal-title">Доставка под заказ</h2>
         <button class="modal-close-button">
@@ -427,7 +429,7 @@
             </div>
             <div class="modal-group">
               <label class="modal-form-title modal-email" for="modal-form-email">Ваш e-mail:</label>
-              <input class="modal-form-input" type="email" id="modal-form-email" name="email" placeholder="Введите e-mail">
+              <input class="modal-form-input" type="email" id="modal-form-email" name="email" required placeholder="Введите e-mail">
               <span class="modal-form-input-caption">Забавный у вас адрес</span>
             </div>
           </div>
@@ -438,7 +440,7 @@
             </div>
             <div class="modal-group">
               <div class="modal-form-count-div">
-                <label class="modal-form-title" for="modal-form-count">Количество:</label>
+                <span class="modal-form-title">Количество:</span>
                 <button class="modal-info-button" type="button">i
                   <span class="visually-hidden">Подсказка при наведении на кнопку.</span>
                 </button>
@@ -454,7 +456,8 @@
                     </svg>
                   <span class="visually-hidden">Уменьшить количество.</span>
                 </button>
-                <input class="modal-form-input modal-form-count" type="text" id="modal-form-email" name="count" value="1">
+                <label class="visually-hidden" for="modal-form-count">Количество:</label>
+                <input class="modal-form-input modal-form-count" type="text" id="modal-form-count" name="count" value="1">
                 <button class="button-count button-plus" type="button">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="black" fill-opacity="0.3" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
