@@ -2898,7 +2898,7 @@ text-align: center;
   margin: 0px;
 }
 
-.popover-modal::before {
+/* .popover-modal::before {
   position: absolute;
   content: "";
   background-color: rgb(0, 0, 0);
@@ -2906,4 +2906,4 @@ text-align: center;
   height: 12px;
   top: -4px;
   right: 47px;
-  transfor
+  transfor */
