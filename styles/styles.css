@@ -426,7 +426,6 @@ body {
 
 .navigation-user-link-gray {
   color: rgba(0, 0, 0, 0.3);
-  margin-left: 2px;
   padding: 10px;
 }
 
@@ -844,6 +843,14 @@ top: 2px;
   padding-bottom: 9px;
   position: relative;
   z-index: 1;
+}
+
+.button-filter {
+  width: 200px;
+}
+
+.services-button-top {
+  margin-top: 30px;
 }
 
 .modal-button {
@@ -1583,7 +1590,7 @@ top: 2px;
 
 .breadcrumbs-item {
   margin: 0px;
-  margin-right: 45px;;
+  margin-right: 35px;;
   padding: 0px;
   list-style-type: none;
   position: relative;
@@ -1732,13 +1739,18 @@ top: 2px;
 
 .catalog-filter-group {
   margin: 0px;
-  margin-bottom: 45px;
+  margin-bottom: 64px;
   padding: 0px;
   border: none;
 }
 
+.catalog-filter-group:last-of-type {
+  margin-top: -21px;
+  margin-bottom: 26px;
+}
+
 .catalog-filter-title {
-  margin-bottom: 30px;
+  margin-bottom: 39px;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -1754,6 +1766,10 @@ top: 2px;
   height: 2px;
   top: -14px;
   background-color: rgba(0, 0, 0);
+}
+
+.catalog-filter-title-bottom {
+  margin-bottom: 22px;
 }
 
 
@@ -2031,16 +2047,19 @@ top: 2px;
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   border: 0;
   outline: 3px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -3px;
   margin-bottom: 51px;
 }
 
 .button-loadmore:focus {
   border: 0;
+  outline-offset: -5px;
   outline: 5px solid rgb(175, 79, 255);
+
 }
 
 .button-loadmore:hover {
@@ -2059,6 +2078,7 @@ top: 2px;
   display: flex;
   justify-content: center;
   line-height: 19px;
+  margin-left: 57px;
 }
 
 .pagination-item {
@@ -2117,8 +2137,8 @@ top: 2px;
   box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 11px;
-  padding-right: 16px;
-  padding-left: 15px;
+  padding-right: 14px;
+  padding-left: 14px;
 }
 
 .pagination-page:focus {
@@ -2280,9 +2300,9 @@ input.search-input:not(:placeholder-shown) {
   display: grid;
   box-sizing: border-box;
   grid-template-columns: repeat(2, 360px);
-  row-gap: 44px;
+  row-gap: 47px;
   column-gap: 40px;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
 }
 
 .product-card {
