@@ -1183,7 +1183,7 @@ body {
   border-bottom: 3px solid rgba(0, 0, 0);
 }
 
-.subscribe-input:invalid {
+.subscribe-input-invalid:invalid {
   border-bottom: 3px solid rgb(255, 61, 61);
 }
 
