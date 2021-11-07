@@ -1790,7 +1790,7 @@ body {
 .catalog-filter-input {
   width: 50px;
   padding: 0 2px;
-  font-family: inherit;
+  font-family: inherit, sans-serif;
   font-size: inherit;
   line-height: inherit;
   color: inherit;
