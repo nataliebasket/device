@@ -250,13 +250,13 @@ body {
 .navigation-catalog .navigation-link::before {
   position: absolute;
   content: "+";
-  font-family: sans-serif;
-  font-size: 35px;
+  font-family: "Rubik", serif;
+  font-size: 31px;
   text-align: center;
   width: 50px;
   height: 50px;
   display: block;
-  padding-top: 12px;
+  padding-top: 11px;
   padding-left: 4px;
   top: 50%;
   right: 0;
@@ -269,13 +269,13 @@ body {
 
 .navigation-catalog .navigation-link:hover::before {
   content: "-";
-  font-family: sans-serif;
+  font-family: "Rubik", serif;
   font-size: 35px;
   text-align: center;
   width: 50px;
   height: 50px;
   display: block;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 4px;
   opacity: 1;
 }
@@ -962,7 +962,7 @@ body {
 .delivery-order::after {
   content: "i";
   position: absolute;
-  font-family: sans-serif;
+  font-family: "Rubik", serif;
   text-transform: lowercase;
   font-size: 18px;
   font-weight: 700;
@@ -1009,7 +1009,13 @@ body {
   padding-bottom: 70px;
 }
 
-.information-about .information-contacts {
+.information-about {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+}
+
+.information-contacts {
   width: 560px;
   display: flex;
   flex-direction: column;
@@ -1407,7 +1413,6 @@ body {
   outline: 5px solid rgb(175, 79, 255);
   outline-offset: -1px;
   position: relative;
-  /* background-color: inherit; */
 }
 
 .footer-social-button:focus svg {
@@ -1740,7 +1745,7 @@ body {
   border: 2px solid rgb(36, 36, 36);
   border-radius: 50%;
   cursor: pointer;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 }
 
 .price-toggle-min {
@@ -1750,8 +1755,8 @@ body {
 
 .price-toggle-max {
   top: -8px;
-  right: -50%;
-  transform: translateX(-50%);
+  right: 0;
+  transform: translateX(50%);
   align-items: center;
 }
 
@@ -2792,7 +2797,7 @@ input.search-input:not(:placeholder-shown) {
   margin-top: -2px;
   border: none;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Rubik", serif;
   font-size: 16px;
   font-weight: 700;
   color: rgba(0, 0, 0);
